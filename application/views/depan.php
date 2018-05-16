@@ -42,9 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <ul class="nav navbar-nav navbar-right">
         
 		<div class="navbar-right">
-		 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Signin
-</button>
+		 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Signin</button>
 </div>
 
 <!-- Modal -->
