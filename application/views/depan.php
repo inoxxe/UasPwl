@@ -111,52 +111,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!-- /About Us -->
 
-<!-- Services -->
-<div class="services" id="services">
-<div class="container">
-<h3>Services</h3>
-<p class="agileits">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-<div class="col-md-6 agileits">
-<div class="col-md-2 w3_ic">
-<i class="fa fa-file-o" aria-hidden="true"></i>
-</div> 
-<div class="col-md-10 w3_pgh">
-<h4>Motivation class</h4>
-<p class="w3l_prgh">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-</div>
-<div class="clearfix"></div>
-</div>
-<div class="col-md-6 agileits">
-<div class="col-md-2 w3_ic">
-<i class="fa fa-hand-rock-o" aria-hidden="true"></i>
-</div> 
-<div class="col-md-10 w3_pgh">
-<h4>Lab</h4>
-<p class="w3l_prgh">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-</div>
-</div>
-<div class="col-md-6 agileits">
-<div class="col-md-2 w3_ic">
-<i class="fa fa-universal-access" aria-hidden="true"></i>
-</div> 
-<div class="col-md-10 w3_pgh">
-<h4>Library</h4>
-<p class="w3l_prgh">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-</div>
-</div>
-<div class="col-md-6 agileits">
-<div class="col-md-2 w3_ic">
-<i class="fa fa-road" aria-hidden="true"></i>
-</div> 
-<div class="col-md-10 w3_pgh">
-<h4>Recreation</h4>
-<p class="w3l_prgh">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-</div>
-</div>
-</div>
-</div>
-<!-- /Services -->
-
 <!-- Team -->
 <div class="team-section" id="team">
         <h2 align="center">Our Staff</h2>
@@ -596,10 +550,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <div class="agile_dwn">
 <div class="w3ls_lft">
-<input type="email" name="email" placeholder="Mail ID" required="">
-</div>
-<div class="w3ls_rgt">
-<input type="text" name="phonenumber" placeholder="PhoneNumber" required="">
+<input type="email" name="email" placeholder="Email" required="">
 </div>
 <div class="clearfix"></div>
 </div>
@@ -614,7 +565,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <div class="map">
 
- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6509915.939484077!2d-123.79728565006775!3d37.1843152587944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia%2C+USA!5e0!3m2!1sen!2sin!4v1509946591019" style="border:0" allowfullscreen></iframe>
+ <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d126727.19938504147!2d110.33895480715243!3d-6.982755934140157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x2e708b4ec52229d7%3A0xc791d6abc9236c7!2sudinus+semarang!3m2!1d-6.982761099999999!2d110.4089954!5e0!3m2!1sid!2sid!4v1526456438087" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
  </div>
 <!-- /Contact Us-->
@@ -648,16 +599,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="col-md-3 wthree_l">
 <h4>Contact Address</h4>
 			<i class="fa fa-map-marker" aria-hidden="true"></i>
-			<p>28Hk brs, provincial park,avenue road, California</p>
+			<p> Jalan Imam Bonjol No. 207, Pindrikan Lor, Semarang Tengah, Pendrikan Kidul, Semarang Tengah, Pendrikan Kidul, Semarang Tengah, Kota Semarang, Jawa Tengah 50131</p>
 			<i class="fa fa-phone" aria-hidden="true"></i>
-			<p>Tel : +(12) 498 5563 3312     , 
-			+(12) 498 5563 3439</p>
+			<p>Tel : (024) 3517261 </p>
 			<i class="fa fa-fax" aria-hidden="true"></i>
-			<p>Fax : +(12) 498 5563 2178</p>
+			<p>Fax : (024) 3569684</p>
 			<i class="fa fa-user" aria-hidden="true"></i>
 			<p>Contact Name : Jamie</p>
 			<i class="fa fa-envelope" aria-hidden="true"></i>
-			<p><a href="mailto:info@example.com">info@examplemail.com</a></p>
+			<p><a href="mailto:info@example.com">sekretariat@dinus.ac.id</a></p>
 
 </div>
 
@@ -667,7 +617,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 
 <div class="footerdown">
- <p>&copy; Didactic 2018. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="blank">W3layouts</a></p>
+ <p>&copy; SI-DIN</a></p>
  </div>
 <!--/Footer-->
 <script src="js/jquery.min.js"></script>
