@@ -42,6 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <ul class="nav navbar-nav navbar-right">
         
 		<div class="navbar-right">
+		<a href="<?php echo base_url('index.php/helloword/formlogin'); ?>" class="btn btn-primary">Sign In</a>
 		 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Signin</button>
 </div>
 
