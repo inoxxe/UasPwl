@@ -14,23 +14,25 @@ class Helloword extends CI_Controller{
 		$this->load->view('formlogin');
 	}
 
-	function login(){
-		if (isset($_POST['submit'])){
-			$nim=$this->input->uas_pwl['nim'];
-			$password=$this->input->uas_pwl['password'];
-			$hasil=$this->model_operator->login($nim,$password);
-			if($hasi==1){
-				$this->session->set_userdata(array(
-					'status_login'=>'berhasil'
-				));
-				redirect('depan.php');
-			}
-			else{
-				echo "gagal login";
-			}
-		}
-		else{
-			$this->load->view['form_login'];
+	public function login()
+	{
+		$this->load->model('model_operator');
+		$username=$this->input->post('nim');
+		$password=$this->input->post('password');
+		$where=array(
+			'nim'=>$nim,
+			'password'=>md5($password)
+		);
+		$cek=$this->model_operator->formlogin('user',$where)->num_rows();
+		if($cek>0){
+			$data_session=array(
+				'nim'=>$username,
+				'status'=>"login"
+			);
+			$this->session->set_userdata($data_session);
+			redirect(base_url('depan'));
+		}else{
+			echo "Nim/Password anda salah";
 		}
 	}
 

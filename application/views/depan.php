@@ -43,7 +43,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         
 		<div class="navbar-right">
 		<a href="<?php echo base_url('index.php/helloword/formlogin'); ?>" class="btn btn-primary">Sign In</a>
-		 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Signin</button>
 </div>
 
 <!-- Modal -->
@@ -93,7 +92,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="aboutus" id="about">
 <div class="container">
 <h3>About Us</h3>
-<p class="w3_dwn">SI-DIN dibuat untuk menolong mahasiswa dalam pemesanan kelas untuk kegiatan belajar mengajar.</p>
+<p class="w3_dwn">SI-DIN dibuat untuk membantu mahasiswa dalam pemesanan kelas untuk kegiatan belajar mengajar.</p>
 <div class="w3l_abtdwn">
 <div class="col-md-4 w3l_r1">
 </div>
