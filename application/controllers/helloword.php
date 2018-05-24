@@ -17,20 +17,20 @@ class Helloword extends CI_Controller{
 	public function login()
 	{
 		$this->load->model('model_operator');
-		$username=$this->input->post('nim');
+		$nim=$this->input->post('nim');
 		$password=$this->input->post('password');
 		$where=array(
 			'nim'=>$nim,
 			'password'=>md5($password)
 		);
-		$cek=$this->model_operator->formlogin('user',$where)->num_rows();
+		$cek=$this->model_operator->login('login_mhs',$where)->num_rows();
 		if($cek>0){
 			$data_session=array(
-				'nim'=>$username,
+				'nim'=>$nim,
 				'status'=>"login"
 			);
 			$this->session->set_userdata($data_session);
-			redirect(base_url('depan'));
+			redirect(base_url('/'));
 		}else{
 			echo "Nim/Password anda salah";
 		}

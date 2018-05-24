@@ -28,7 +28,7 @@
             </div><!-- /.login-logo -->
             <div class="login-box-body">
                 <p class="login-box-msg">Sign in</p>
-                <form action="<?php echo site_url('helloworld/login'); ?>" method="post">
+                <form action="<?php echo base_url('index.php/helloword/login'); ?>" method="post">
                     <div class="form-group has-feedback">
                         <input type="text" name="nim" class="form-control" placeholder="Masukkan NIM"/>
                         <span class="glyphicon glyphicon-user form-control-feedback"></span>
@@ -42,7 +42,7 @@
                             
                             <br>
 
-                            <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                            <button type="submit" name="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
                         </div><!-- /.col -->
                     </div>
             </div><!-- /.login-box-body -->
