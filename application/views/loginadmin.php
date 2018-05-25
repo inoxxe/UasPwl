@@ -28,10 +28,10 @@
                 <a href="<?php echo base_url('/');?>" >SIDIN</a>
             </div><!-- /.login-logo -->
             <div class="bg-login">
-                    <p class="login-box-msg">Login Mahasiswa</p> 
-                            <form action="<?php echo base_url('index.php/helloword/login'); ?>" method="post">
+                    <p class="login-box-msg">Login Admin</p> 
+                            <form action="<?php echo base_url('index.php/helloword/login_adm'); ?>" method="post">
                                 <div class="form-group has-feedback">
-                                    <input type="text" name="nim" class="form-control" placeholder="Masukkan NIM"/>
+                                    <input type="text" name="username" class="form-control" placeholder="Masukkan Username"/>
                                      <span class="glyphicon glyphicon-user form-control-feedback"></span>
                                  </div>
                                     <div class="form-group has-feedback">
@@ -43,8 +43,8 @@
                                         <br>
                                         <button type="submit" name="submit" class="btn btn-primary btn-block btn-flat">Login</button>
                                      </div>   
-                            </form> 
-            </div>                                           
+                            </form>     
+            </div>                       
         </div>
                 
                 
@@ -72,24 +72,6 @@
 <!-- jQuery Knob Chart -->
 <script src="<?php echo base_url('login/plugins/knob/jquery.knob.js');?>"></script>
 <script src="<?php echo base_url('js/jquery-1.9.1.min.js');?>"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-    //Horizontal Tab
-    $('#parentHorizontalTab_agile').easyResponsiveTabs({
-        type: 'default', //Types: default, vertical, accordion
-        width: 'auto', //auto or any width like 600px
-        fit: true, // 100% fit in a container
-        tabidentify: 'hor_1', // The tab groups identifier
-        activate: function(event) { // Callback function if tab is switched
-            var $tab = $(this);
-            var $info = $('#nested-tabInfo');
-            var $name = $('span', $info);
-            $name.text($tab.text());
-            $info.show();
-        }
-    });
-});
-</script>
 
 <!-- daterangepicker -->
 <script src="<?php echo base_url('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js');?>"></script>

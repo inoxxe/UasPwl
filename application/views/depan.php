@@ -34,7 +34,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <h1><a class="navbar-brand" href="#">SI-DIN</a></h1>
+      <h1><a class="navbar-brand" href="<?php echo base_url ('/');?>">SI-DIN</a></h1>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -42,7 +42,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <ul class="nav navbar-nav navbar-right">
         
 		<div class="navbar-right">
-		<a href="<?php echo base_url('index.php/helloword/formlogin'); ?>" class="btn btn-primary">Sign In</a>
+		<a href="<?php echo base_url('index.php/helloword/formlogin'); ?>" class="btn btn-primary">Login Mahasiswa</a>
+		<a href="<?php echo base_url('index.php/helloword/loginadmin'); ?>" class="btn btn-primary">Login Admin</a>
 </div>
 
 <!-- Modal -->

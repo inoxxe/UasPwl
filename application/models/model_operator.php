@@ -11,4 +11,10 @@ class Model_operator extends CI_Model{
 		// 	return 0;
 		// }
 	}
+	function login_adm($table, $where){
+		return $this->db->get_where($table,$where);
+	}
+	function register($table,$where){
+		return $this->db->get_where($table,$where);
+	}
 }
