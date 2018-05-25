@@ -131,54 +131,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             </div>
-            <div class="col-md-3 w3_team">
-              <div class="team-profile">
-                <div class="member-img" align="center">
-                  <img src="images/tm2.jpg" class="img-responsive" alt="">
-                </div>
-                <h4 align="center">Member 2</h4>
-				<h5>DEAN</h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <div class="member-social" align="center">
-				  <a href=""><i class="fa fa-linkedin"></i></a>	
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-google"></i></a>
-                </div>
-              </div>
-            </div>  <!-- member 1 ends here  -->
-              <div class="col-md-3 w3_team">
-              <div class="team-profile">
-                <div class="member-img" align="center">
-                  <img src="images/tm3.jpg" class="img-responsive" alt="">
-                </div>
-                <h4 align="center">Member 3</h4>
-				<h5>Professor</h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <div class="member-social" align="center">
-				  <a href=""><i class="fa fa-linkedin"></i></a>	
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-google"></i></a>
-                </div>
-              </div>
-            </div> <!-- member 2 ends here  -->
-              <div class="col-md-3 w3_team">
-              <div class="team-profile">
-                <div class="member-img" align="center">
-                  <img src="images/tm4.jpg" class="img-responsive" alt="">
-                </div>
-                <h4 align="center">Member 4</h4>
-				<h5>Lab Assistant</h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <div class="member-social" align="center">
-				  <a href=""><i class="fa fa-linkedin"></i></a>	
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-google"></i></a>
-                </div>
-              </div>
-            </div> <!-- member 3 ends here  -->
+              
           </div>
         </div>
       
@@ -310,27 +263,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="container">
 <div class="col-md-4 agile_l">
 <h3>Didactic</h3>
-<p class="w3_pght">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie.Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie</p>
+<p class="w3_pght">Lorem Ipsum  diel abdiel ist ein einfacher Demo-Text für die Print- und Schriftindustrie.Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie</p>
 <a href="mailto:info@example.com"> Support@didactic.com</a>
 </div>
 <div class="col-md-5 w3l_c">
-<h3>NewsLetter</h3>
-<div class="row">
-<form action="#" method="post">
-<div class="col-md-8 w3l_s">
-<input type="email" name="email" placeholder="Email" required="">
-</div>
-<div class="col-md-4 w3_c">
-<input type="submit" value="subscribe">
-</div>
-</form>
-
-</div>
-<h4>Follow Us On</h4>
-<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 </div>
 <div class="col-md-3 wthree_l">
 <h4>Contact Address</h4>
