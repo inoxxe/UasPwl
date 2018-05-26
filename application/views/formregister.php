@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-	<form action="<?php echo site_url('helloword/register'); ?>" method="post">
+	<form action="<?php echo site_url('helloword/prosesregister'); ?>" method="post">
 	<table>
 		<tr>
 			<td>NIM</td>
@@ -17,6 +17,11 @@
 			<td><input type="text" name="nama"></td>
 		</tr>
 		<tr>
+			<td>Password</td>
+			<td>:</td>
+			<td><input type="password" name="password'"></td>
+		</tr>
+		<tr>
 			<td>Jenis Kelamin</td>
 			<td>:</td>
 			<td>
@@ -27,7 +32,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td>Tempat/Tgl Lahir</td>
+			<td>Tgl Lahir</td>
 			<td>:</td>
 			<td><input type="text" name="lahir"></td>
 		</tr>

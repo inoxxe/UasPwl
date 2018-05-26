@@ -29,7 +29,7 @@ class Helloword extends CI_Controller{
 			'nim'=>$nim,
 			'password'=>md5($password)
 		);
-		$cek=$this->model_operator->login('login_mhs',$where)->num_rows();
+		$cek=$this->model_operator->login('register',$where)->num_rows();
 		if($cek>0){
 			$data_session=array(
 				'nim'=>$nim,
@@ -38,7 +38,7 @@ class Helloword extends CI_Controller{
 			$this->session->set_userdata($data_session);
 			redirect(base_url('/'));
 		}else{
-			echo "Nim/Password anda salah";
+			echo '<Script>alert ("Gagal Login");</Script>';
 		}
 	}
 	public function login_adm()
@@ -59,7 +59,7 @@ class Helloword extends CI_Controller{
 			$this->session->set_userdata($data_session);
 			redirect(base_url('/'));
 		}else{
-			echo "Nim/Password anda salah";
+			echo '<Script>alert ("Gagal Login");</Script>';
 		}
 	}
 	function logout(){
@@ -67,7 +67,7 @@ class Helloword extends CI_Controller{
 		redirect('helloword/login');
 	}
 	
-	public function register()
+	public function prosesregister()
 	{
 		$this->load->model('model_operator');
 		$data = array(
@@ -78,11 +78,11 @@ class Helloword extends CI_Controller{
         'lahir' => $this->input->post('lahir'),
         'alamat' => $this->input->post('alamat'),
         'jurusan' => $this->input->post('jurusan'),
-        'orangtua' => $this->input->post('orangtua'),
+        'orangtua' => $this->input->post('orangtua')
          );
 
-		$data = $this->model_operator->Insert('login_mhs', $data);
+		$data = $this->model_operator->Insert('register', $data);
 		return "berhasil";
-    	//redirect(base_url(),'refresh');
+    	redirect(base_url(),'refresh');
 	}
 }
