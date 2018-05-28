@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-	<form action="<?php echo site_url('helloword/prosesregister'); ?>" method="post">
+	<form action="<?php echo base_url('index.php/helloword/prosesregister'); ?>" method="post">
 	<table>
 		<tr>
 			<td>NIM</td>
@@ -19,7 +19,7 @@
 		<tr>
 			<td>Password</td>
 			<td>:</td>
-			<td><input type="password" name="password'"></td>
+			<td><input type="password" name="password"></td>
 		</tr>
 		<tr>
 			<td>Jenis Kelamin</td>

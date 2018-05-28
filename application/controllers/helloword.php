@@ -30,10 +30,10 @@ class Helloword extends CI_Controller{
 			'password'=>md5($password)
 		);
 		$cek=$this->model_operator->login('register',$where)->num_rows();
-		if($cek>0){
+		if( $cek > 0 ){
 			$data_session=array(
 				'nim'=>$nim,
-				'status'=>"login"
+				'status'=> 'login'
 			);
 			$this->session->set_userdata($data_session);
 			redirect(base_url('/'));
@@ -41,6 +41,7 @@ class Helloword extends CI_Controller{
 			echo '<Script>alert ("Gagal Login");</Script>';
 		}
 	}
+
 	public function login_adm()
 	{
 		$this->load->model('model_operator');
@@ -82,7 +83,7 @@ class Helloword extends CI_Controller{
          );
 
 		$data = $this->model_operator->Insert('register', $data);
-		return "berhasil";
+		return $data;
     	redirect(base_url(),'refresh');
 	}
 }
