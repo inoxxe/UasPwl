@@ -9,7 +9,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <html lang="">
 <!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
 <head>
-<title>SI-DIN</title>
+<title>SI-DIN | Mahasiswa</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -29,8 +29,6 @@ Licence URI: http://www.os-templates.com/template-terms
         <li><a href="index.html"><i class="fa fa-lg fa-home"></i></a></li>
         <li><a href="#" title="Call Us"><i class="fa fa-phone"></i></a></li>
         <li><a href="#" title="Send a Mail"><i class="fa fa-envelope-o"></i></a></li>
-        <li><a href="#" title="Login"><i class="fa fa-lg fa-sign-in"></i></a></li>
-        <li><a href="#" title="Sign Up"><i class="fa fa-lg fa-edit"></i></a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
@@ -42,7 +40,7 @@ Licence URI: http://www.os-templates.com/template-terms
     <header id="header" class="hoc clear"> 
       <!-- ################################################################################################ -->
       <div id="logo" class="fl_left">
-        <h1><a href="index.html">SI-DIN</a></h1>
+        <h1><a href="">SI-DIN</a></h1>
       </div>
       <nav id="mainav" class="fl_right">
         <ul class="clear">
@@ -358,8 +356,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <div class="wrapper row5">
   <div id="copyright" class="hoc clear"> 
-    <p class="fl_left">Copyright &copy; 2017 - All Rights Reserved - <a href="#">Domain Name</a></p>
-    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">SI-DIN</a></p>
   </div>
 </div>
 

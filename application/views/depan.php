@@ -62,20 +62,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<ul class="slides">
 							<li>
 								<div class="wthree_banner_info_grid">
-									<h3>Education Is Life</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet nibh at ligula pharetra, eu semper dui tristique. Phasellus mi sapien.</p>
+									<h3>Our Vision</h3>
+									<p>The top priority university to be chosen in education and entrepreneurship.</p>
 								</div>
 							</li>
 							<li>
 								<div class="wthree_banner_info_grid">
-									<h3>Never Stop Learning</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet nibh at ligula pharetra, eu semper dui tristique. Phasellus mi sapien.</p>
+									<h3>Our Mission</h3>
+									<p>Conducting high quality university.</p>
+                  <p>Growing and developing creativity and innovation of civitas academica that well contributes to society, government, and business sector.</p>
 								</div>
 							</li>
 							<li>
 								<div class="wthree_banner_info_grid">
-									<h3>Learning Never Ends</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet nibh at ligula pharetra, eu semper dui tristique. Phasellus mi sapien.</p>
+									<h3>Motto</h3>
+									<p>For a Better Future.</p>
 								</div>
 							</li>
 						</ul>
@@ -93,13 +94,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="aboutus" id="about">
 <div class="container">
 <h3>About Us</h3>
-<p class="w3_dwn">SI-DIN dibuat untuk membantu mahasiswa dalam pemesanan kelas untuk kegiatan belajar mengajar.</p>
+<p class="w3_dwn">SI-DIN dibuat untuk membantu mahasiswa dalam menginput KRS serta pemesanan kelas untuk kegiatan belajar mengajar.</p>
 <div class="w3l_abtdwn">
 <div class="col-md-4 w3l_r1">
-</div>
-<div class="clearfix"></div>
-<div class="w3_rm">
-<a href="#services" class="page-scroll">READ MORE</a>
 </div>
 <div class="clearfix"></div>
 </div>
@@ -121,10 +118,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   <img src="images/tm1.jpg" class="img-responsive" alt="">
                 </div>
                 <h4 align="center">Member 1</h4>
-				<h5>CEO</h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<h5>Dosen</h5>
+				<p>Dosen Pemrograman Web Lanjut.</p>
                 <div class="member-social" align="center">
-				  <a href=""><i class="fa fa-linkedin"></i></a>	
+				         <a href=""><i class="fa fa-instagram" aria-hidden="true"></i>
                   <a href=""><i class="fa fa-facebook"></i></a>
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-google"></i></a>
@@ -143,21 +140,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- Clients -->
 <div class="clients" id="testimonials">
 <div class="container">
-<h3>Clients</h3>
+<h3>Ulasan</h3>
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
                   <div class="row" style="padding: 20px">
                     <button style="border: none;"><i class="fa fa-quote-left testimonial_fa" aria-hidden="true"></i></button>
-                    <p class="testimonial_para">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en.</p><br>
+                    <p class="testimonial_para">Sangat membantu dalam menunjang kegiatan belajar mengajar.</p><br>
                     
                     <div class="col-sm-1">
                         <img src="images/t1.jpg" class="img-responsive" style="width: 80px">
                         </div>
                         <div class="col-sm-11">
                         <h4>Jack Andreson</h4>
-                       <h6>Old Student</h6>
+                       <h6>Student</h6>
                         </p>
                     </div>
                     
@@ -166,14 +163,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                <div class="item">
                    <div class="row" style="padding: 20px">
                     <button style="border: none;"><i class="fa fa-quote-left testimonial_fa" aria-hidden="true"></i></button>
-                    <p class="testimonial_para">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en.</p><br>
+                    <p class="testimonial_para">Sangat bagus. Kembangkan lagi</p><br>
                     <div class="row">
                     <div class="col-sm-1">
                         <img src="images/t2.jpg" class="img-responsive" style="width: 80px">
                         </div>
                         <div class="col-sm-11">
                         <h4>Kiara Andreson</h4>
-                        <h6>Old Student</h6>
+                        <h6>Student</h6>
                         </p>
                     </div>
                     </div>
@@ -182,7 +179,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="item">
                    <div class="row" style="padding: 20px">
                     <button style="border: none;"><i class="fa fa-quote-left testimonial_fa" aria-hidden="true"></i></button>
-                    <p class="testimonial_para">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en.</p><br>
+                    <p class="testimonial_para">Tidak perlu capek datang ke TU untuk memesan kelas. Sangat baik</p><br>
                     <div class="row">
                     <div class="col-sm-1">
                         <img src="images/t3.jpg" class="img-responsive" style="width: 80px">
@@ -262,8 +259,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="footer">
 <div class="container">
 <div class="col-md-4 agile_l">
-<h3>Didactic</h3>
-<p class="w3_pght">Lorem Ipsum  diel abdiel ist ein einfacher Demo-Text für die Print- und Schriftindustrie.Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie</p>
+<h3>SI-DIN</h3>
+<p class="w3_pght">Hanya ingin membantu dan memudahkan siswa</p>
 <a href="mailto:info@example.com"> Support@didactic.com</a>
 </div>
 <div class="col-md-5 w3l_c">
