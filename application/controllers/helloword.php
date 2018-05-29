@@ -89,5 +89,10 @@ class Helloword extends CI_Controller{
     	redirect(base_url('index.php/helloword/formregister'));
 	}
 
+	public function mahasiswa()
+	{
+		$this->load->view('mahasiswa');
+	}
+
 
 }
