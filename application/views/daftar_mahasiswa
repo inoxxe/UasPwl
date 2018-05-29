@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<table>
+
+		<tr style="background: orange;">
+				<td>Id</td>
+				<td>NIM</td>
+				<td>Nama</td>
+				<td>Jenis Kelamin</td>
+				<td>Tgl Lahir</td>
+				<td>Alamat</td>
+				<td>Jurusan</td>
+				<td>Nama Orangtua</td>
+				<td colspan="2">Eksekusi</td>
+			</tr>
+			<?php
+			foreach ($data as $mahasiswa) {?>
+				<tr bgcolor="white">
+					<td><?php echo $register['id'];?></td>
+					<td><?php echo $register['nim'];?></td>
+					<td><?php echo $register['nama'];?></td>
+					<td><?php echo $register['jns_klmn'];?></td>
+					<td><?php echo $register['lahir'];?></td>
+					<td><?php echo $register['alamat'];?></td>
+					<td><?php echo $register['jurusan'];?></td>
+					<td><?php echo $register['orangtua'];?></td>
+					
+				</tr>
+			<?php } ?>
+		
+	</table>
+	</body>
+</html>

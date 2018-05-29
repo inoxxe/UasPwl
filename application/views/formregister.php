@@ -59,6 +59,16 @@
 			<td>:</td>
 			<td><input type="text" name="orangtua"></td>
 		</tr>
+		<tr>
+			<td>Status</td>
+			<td>:</td>
+			<td>
+				<select name="level">
+					<option>Mahasiswa</option>
+					<option>Admin</option>
+				</select>
+			</td>
+		</tr>
 		
 	</table>
 	<button type="submit">Registrasi</button>

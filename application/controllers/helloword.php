@@ -20,27 +20,13 @@ class Helloword extends CI_Controller{
 	public function formregister(){
 		$this->load->view('formregister');
 	}
-	public function login()
-	{
-		$this->load->model('model_operator');
-		$nim=$this->input->post('nim');
-		$password=$this->input->post('password');
-		$where=array(
-			'nim'=>$nim,
-			'password'=>md5($password)
-		);
-		$cek=$this->model_operator->login('register',$where)->num_rows();
-		if( $cek > 0 ){
-			$data_session=array(
-				'nim'=>$nim,
-				'status'=> 'login'
-			);
-			$this->session->set_userdata($data_session);
-			redirect(base_url('/'));
-		}else{
-			echo '<Script>alert ("Gagal Login");</Script>';
-		}
+	public function daftarmahasiswa(){
+	$data=$this->load->model('model_operator');
+	$data=$this->model_operator->GetMahasiswa('register');
+	$data=array('data'=>$data);
+	$this->load->view('daftar_mahasiswa',$data);
 	}
+	
 
 	public function login_adm()
 	{
@@ -48,24 +34,39 @@ class Helloword extends CI_Controller{
 		$username=$this->input->post('username');
 		$password=$this->input->post('password');
 		$where=array(
-			'username'=>$username,
+			'nim'=>$username,
 			'password'=>md5($password)
 		);
-		$cek=$this->model_operator->login('login_adm',$where)->num_rows();
-		if($cek>0){
-			$data_session=array(
-				'username'=>$username,
-				'status'=>"login"
-			);
-			$this->session->set_userdata($data_session);
-			redirect(base_url('/'));
+		$cek=$this->model_operator->login('register',$where);
+		if( $cek->num_rows() > 0 )
+		{
+			$data = $cek->row_array();	
+			$this->session->set_userdata('login', TRUE);
+			if($data['level'] === 'Mahasiswa' )
+			{
+				$this->session->set_userdata('akses', 'Mahasiswa');
+				$this->session->set_userdata('username', $data['nim']);
+				$this->session->set_userdata('status', 'login');
+				redirect(base_url('/'));
+			}
+			
+			if($data['level'] === 'Admin' )
+			{
+				$this->session->set_userdata('akses', 'Admin');
+				$this->session->set_userdata('username', $data['nim']);
+				$this->session->set_userdata('status', 'login');
+				redirect(base_url('/'));
+			}
+			
 		}else{
+			
+			redirect(base_url('index.php/helloword/loginadmin'));
 			echo '<Script>alert ("Gagal Login");</Script>';
 		}
 	}
-	function logout(){
+	public function logout(){
 		$this->session->session_destroy();
-		redirect('helloword/login');
+		redirect('bagas/helloword/login');
 	}
 	
 	public function prosesregister()
@@ -79,11 +80,14 @@ class Helloword extends CI_Controller{
         'lahir' => $this->input->post('lahir'),
         'alamat' => $this->input->post('alamat'),
         'jurusan' => $this->input->post('jurusan'),
-        'orangtua' => $this->input->post('orangtua')
+        'orangtua' => $this->input->post('orangtua'),
+        'level' => $this->input->post('level')
          );
 
 		$data = $this->model_operator->Insert('register', $data);
-		return $data;
-    	redirect(base_url(),'refresh');
+		
+    	redirect(base_url('index.php/helloword/formregister'));
 	}
+
+
 }

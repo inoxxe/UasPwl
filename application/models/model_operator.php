@@ -17,8 +17,19 @@ class Model_operator extends CI_Model{
 	}
 	/*function login_adm($table, $where){
 		return $this->db->get_where($table,$where);
-	}
+	}*/
 	function register($table,$where){
 		return $this->db->get_where($table,$where);
-	}*/
+	}
+
+	function tampil($table){
+		$res = $this->db->get('$table');
+		return $res->result_array();
+	}
+	public function GetMahasiswa($table)
+	{
+		$res=$this->db->get($table);//memilih tabel
+		return $res->result_array();//mengembalikan hasil
+	}
+
 }

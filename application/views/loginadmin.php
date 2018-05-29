@@ -28,7 +28,7 @@
                 <a href="<?php echo base_url('/');?>" >SIDIN</a>
             </div><!-- /.login-logo -->
             <div class="bg-login">
-                    <p class="login-box-msg">Login Admin</p> 
+                    <p class="login-box-msg">Login</p> 
                             <form action="<?php echo base_url('index.php/helloword/login_adm'); ?>" method="post">
                                 <div class="form-group has-feedback">
                                     <input type="text" name="username" class="form-control" placeholder="Masukkan Username"/>
