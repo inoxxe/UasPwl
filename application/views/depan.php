@@ -42,8 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <ul class="nav navbar-nav navbar-right">
         
 		<div class="navbar-right">
-		<a href="<?php echo base_url('index.php/helloword/formlogin'); ?>" class="btn btn-primary">Login Mahasiswa</a>
-		<a href="<?php echo base_url('index.php/helloword/loginadmin'); ?>" class="btn btn-primary">Login Admin</a>
+		<a href="<?php echo base_url('index.php/helloword/loginadmin'); ?>" class="btn btn-primary">Login</a>
 </div>
 
 <!-- Modal -->
