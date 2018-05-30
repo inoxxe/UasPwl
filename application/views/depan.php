@@ -12,11 +12,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta charset="utf-8">
 <meta name="keywords" content="Didactic a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
-<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
-<link href="css/simpleLightbox.css" rel="stylesheet" type="text/css" /><!-- gallery css file -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+<link href="<?php echo base_url('css/bootstrap.min.css');?>" rel="stylesheet" type="text/css" media="all">
+<link href="<?php echo base_url('css/font-awesome.min.css');?>" rel="stylesheet" type="text/css" media="all">
+<link href="<?php echo base_url('css/simpleLightbox.css');?>" rel="stylesheet" type="text/css" /><!-- gallery css file -->
+<link href="<?php echo base_url('css/style.css');?>" rel="stylesheet" type="text/css" media="all"/>
+<link rel=stylesheet" href=""<?php echo base_url('css/flexslider.css');?>" type="text/css" media="screen" property="" />
 <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>
@@ -115,7 +115,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-3 w3_team">
               <div class="team-profile">
                 <div class="member-img" align="center">
-                  <img src="images/tm1.jpg" class="img-responsive" alt="">
+                  <img src="<?php echo base_url('images/tm1.jpg');?>" class="img-responsive" alt="">
                 </div>
                 <h4 align="center">Member 1</h4>
 				<h5>Dosen</h5>
@@ -150,7 +150,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <p class="testimonial_para">Sangat membantu dalam menunjang kegiatan belajar mengajar.</p><br>
                     
                     <div class="col-sm-1">
-                        <img src="images/t1.jpg" class="img-responsive" style="width: 80px">
+                        <img src="<?php echo base_url('images/t1.jpg');?>" class="img-responsive" style="width: 80px">
                         </div>
                         <div class="col-sm-11">
                         <h4>Jack Andreson</h4>
@@ -166,7 +166,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <p class="testimonial_para">Sangat bagus. Kembangkan lagi</p><br>
                     <div class="row">
                     <div class="col-sm-1">
-                        <img src="images/t2.jpg" class="img-responsive" style="width: 80px">
+                        <img src="<?php echo base_url('images/t2.jpg');?>" class="img-responsive" style="width: 80px">
                         </div>
                         <div class="col-sm-11">
                         <h4>Kiara Andreson</h4>
@@ -182,7 +182,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <p class="testimonial_para">Tidak perlu capek datang ke TU untuk memesan kelas. Sangat baik</p><br>
                     <div class="row">
                     <div class="col-sm-1">
-                        <img src="images/t3.jpg" class="img-responsive" style="width: 80px">
+                        <img src="<?php echo base_url('images/t3.jpg');?>" class="img-responsive" style="width: 80px">
                         </div>
                         <div class="col-sm-11">
                         <h4>Amy</h4>
@@ -198,7 +198,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <p class="testimonial_para">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en.</p><br>
                     <div class="row">
                     <div class="col-sm-1">
-                        <img src="images/t4.jpg" class="img-responsive" style="width: 80px">
+                        <img src="<?php echo base_url('images/t4.jpg');?>" class="img-responsive" style="width: 80px">
                         </div>
                         <div class="col-sm-11">
                         <h4>Laila</h4>
@@ -287,14 +287,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
  <p>&copy; SI-DIN</a></p>
  </div>
 <!--/Footer-->
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/move-top.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/grayscale.js"></script>
-<script src="js/SmoothScroll.min.js"></script>
-<script defer src="js/jquery.flexslider.js"></script>
-<script src="js/simpleLightbox.js"></script>
+<script src="<?php echo base_url('js/jquery.min.js');?>"></script>
+<script src="<?php echo base_url('js/jquery.easing.min.js');?>"></script>
+<script src="<?php echo base_url('js/move-top.js');?>"></script>
+<script src="<?php echo base_url('js/bootstrap.min.js');?>"></script>
+<script src="<?php echo base_url('js/grayscale.js');?>"></script>
+<script src="<?php echo base_url('js/SmoothScroll.min.js');?>"></script>
+<script defer src="<?php echo base_url('js/jquery.flexslider.js');?>"></script>
+<script src="<?php echo base_url('js/simpleLightbox.js');?>"></script>
 <script type="text/javascript">
 							$(window).load(function(){
 							  $('.flexslider').flexslider({
