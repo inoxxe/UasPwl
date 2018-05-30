@@ -46,15 +46,15 @@ class Helloword extends CI_Controller{
 			{
 				$this->session->set_userdata('akses', 'Mahasiswa');
 				$this->session->set_userdata('username', $data['nim']);
-				$this->session->set_userdata('status', 'login');
-				redirect(base_url('/'));
+				$this->session->set_userdata('nama', $data['nama']);
+				redirect(base_url('index.php/control_peminjaman/kelas'));
 			}
 			
 			if($data['level'] === 'Admin' )
 			{
 				$this->session->set_userdata('akses', 'Admin');
 				$this->session->set_userdata('username', $data['nim']);
-				$this->session->set_userdata('status', 'login');
+				$this->session->set_userdata('nama', $data['nama']);
 				redirect(base_url('/'));
 			}
 			

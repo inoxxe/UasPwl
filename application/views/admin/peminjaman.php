@@ -197,7 +197,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo base_url().'index.php/admin/matakuliah'; ?>" class="nav-link">
+                <a href="pages/forms/general.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Input Mata Kuliah</p>
                 </a>
@@ -226,9 +226,9 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo base_url().'index.php/control_peminjaman/daftar'; ?>" class="nav-link">
+                <a href="pages/tables/simple.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Daftar Peminjam</p>
+                  <p>Simple Tables</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -339,31 +339,62 @@
         <div class="row">
           <!-- Left col -->
           <section class="col-lg-12 connectedSortable">
-            <div class="card">
-              <div class="card-header d-flex p-0">
-                <h3 class="card-title p-3">
-                  <i class="fa fa-pie-chart mr-1"></i>
-                  Sales
-                </h3>
-                <ul class="nav nav-pills ml-auto p-2">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#revenue-chart" data-toggle="tab">Area</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#sales-chart" data-toggle="tab">Donut</a>
-                  </li>
-                </ul>
-              </div><!-- /.card-header -->
-              <div class="card-body">
-                <div class="tab-content p-0">
-                  <!-- Morris chart - Sales -->
-                  <div class="chart tab-pane active" id="revenue-chart"
-                       style="position: relative; height: 300px;"></div>
-                  <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;"></div>
+            
+      <div class="container-fluid">
+        <div class="row">
+
+
+          <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Data Mata Kuliah</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form method="POST" action="<?php echo base_url().'index.php/admin/'; ?>"  role="form">
+                <div class="card-body">
+                  <table border="1" style="border-collapse: collapse;">
+                    <tr style="background: grey">
+                        <th scope="col">No</th>
+            <th scope="col">NIM</th>
+            <th scope="col">Hari</th>
+            <th scope="col">Jam</th>
+            <th scope="col">Kelas</th>
+            <th scope="col">Keperluan</th>
+            <th scope="col">Verifikasi</th>
+            <th scope="col">Action</th>
+            <td colspan="2"></td>
+                    </tr>
+                <?php foreach ($data as $krs) {?>
+                    <tr>
+                      <td><?php echo $krs['id']; ?></td>
+                      <td><?php echo $krs['nim']; ?></td>
+                      <td><?php echo $krs['hari']; ?></td>
+                      <td><?php echo $krs['jam']; ?></td>
+                      <td><?php echo $krs['kelas']; ?></td>
+                      <td><?php echo $krs['keperluan']; ?></td>
+
+                        <td><a href="<?php echo base_url('index.php/admin/editmatkul/').$krs['id']; ?>">ya
+                        <a href="<?php echo base_url('index.php/admin/editmatkul/').$krs['id']; ?>">tidak</td>
+                        <td><a href="<?php echo base_url('index.php/control_peminjaman/delete_data/').$krs['id']; ?>">Delete</td>
+                  </tr>
+                  <?php } ?>
+              </table>
                 </div>
-              </div><!-- /.card-body -->
+
+                <div class="card-footer">
+                </div>
+                
+              </form>
+
             </div>
-            <!-- /.card -->
+          </div>
+            
+
+
+
+
           </section>
           <!-- /.Left col -->
           <!-- right col (We are only adding the ID to make the widgets sortable)-->

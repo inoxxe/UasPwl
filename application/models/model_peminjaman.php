@@ -1,35 +1,36 @@
 <?php
-class Model_peminjaamn extends CI_Model{
-	public function Insert($table,$data){
-        $res = $this->db->insert($table, $data);
-        return $res; 
+defined('BASEPATH') OR exit('No Direct Script Access Allowed');
+
+/**
+ * 
+ */
+class MOdel_peminjaman extends CI_Model
+{
+  public function GetMahasiswa($table){
+        $data=$this->db->get($table); // Kode ini berfungsi untuk memilih tabel yang akan ditampilkan
+        return $data->result_array(); // Kode ini digunakan untuk mengembalikan hasil operasi $res menjadi sebuah array
     }
-	function login($table, $where){
-		
-		// $cek= $this->db->get_where('register',array('nim'=>$nim,'password'=>md5($password)));
-		// if($cek->num_rows()>0){
-		// 	return 1;
-		// }
-		// else{
-		// 	return 0;
-		// }
-		return $this->db->get_where($table,$where);
-	}
-	/*function login_adm($table, $where){
-		return $this->db->get_where($table,$where);
-	}*/
-	function register($table,$where){
-		return $this->db->get_where($table,$where);
-	}
+ 
+    public function Insert($table,$data){
+        $data = $this->db->insert($table, $data); // Kode ini digunakan untuk memasukan record baru kedalam sebuah tabel
+        return $data; // Kode ini digunakan untuk mengembalikan hasil $res
+    }
+ 
+    public function Update($table, $data, $where){
+        $data = $this->db->update($table, $data, $where); // Kode ini digunakan untuk merubah record yang sudah ada dalam sebuah tabel
+        return $data;
+    }
+ 
+    public function Delete($table, $where){
+        $data = $this->db->delete($table, $where); // Kode ini digunakan untuk menghapus record yang sudah ada
+        return $data;
+    }
 
-	function tampil($table){
-		$res = $this->db->get('$table');
-		return $res->result_array();
-	}
-	public function GetMahasiswa($table)
-	{
-		$res=$this->db->get($table);//memilih tabel
-		return $res->result_array();//mengembalikan hasil
-	}
-
+    public function GetWhere($table, $where)
+    {
+      $res = $this->db->get_where($table, $where);
+      return $res->result_array();
+    }
 }
+	
+?>

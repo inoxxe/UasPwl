@@ -1,5 +1,3 @@
-<?php require_once ("db.php"); ?>
-
 <html lang="en">
 <head>
   <title>E-class</title>
@@ -13,21 +11,10 @@
 </head>
 <body>
 
-<?php
-   session_start();
-   
-  $user = $_SESSION['user'];
-	$query = mysqli_query($db, "SELECT * FROM user WHERE nim = '$user' ");
-	$session = mysqli_fetch_assoc($query);
-   
-   if(!isset($_SESSION['user'])){
-      header("location:index.php");
-   }
-?>
 
 <div class="container">
     <h1>Peminjaman Kelas</h1>
-            <h1>Selamat Datang <b><?php echo $session['nama']; ?></b></h1>
+            <h1>Selamat Datang <b><?php echo $this->session->userdata('nama'); ?></b></h1>
 </div>
 
 

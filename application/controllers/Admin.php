@@ -8,6 +8,14 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/home');
 	}
 
+	public function peminjaman()
+	{
+		$this->load->model('Modeladmin');
+		$data = $this->Modeladmin->GetMahasiswa('kelas');
+		$data = array('data' => $data);
+		$this->load->view('admin/peminjaman', $data);
+	}
+
 	public function matakuliah()
 	{
 		$this->load->model('Modeladmin');
@@ -69,5 +77,24 @@ class Admin extends CI_Controller {
 	    $this->load->model('modeladmin');
 	    $this->modeladmin->Delete('matakuliah', $id);
 	    redirect('admin/matakuliah','refresh');
+	}
+
+
+	/// Punya INO
+
+	public function delete_data($id)
+	{
+	    $id = array('id' => $id);
+	    $this->load->model('model_peminjaman');
+	    $this->model_peminjaman->Delete('kelas', $id);
+	    redirect('admin/peminjaman','refresh');
+	}
+
+	public function daftar()
+	{
+		$this->load->model('model_peminjaman');
+		$data = $this->model_peminjaman->GetMahasiswa('kelas');
+		$data = array('data' => $data );
+		$this->load->view('admin/peminjaman', $data);
 	}
 }

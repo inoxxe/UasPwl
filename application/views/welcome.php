@@ -1,4 +1,3 @@
-<?php require_once ("db.php"); ?>
 
 <html lang="en">
 <head>
@@ -11,52 +10,13 @@
 </head>
 <body>
 
-<?php
-   session_start();
-
-   
-    $user = $_SESSION['user'];
-	$query = mysqli_query($db, "SELECT * FROM user WHERE nim = '$user' ");
-	$session = mysqli_fetch_assoc($query);
-   	
-   	$status = $session['status'];
-   if(!isset($_SESSION['user'])){
-      header("location:index.php");
-   }
-?>
 
 <div class="container">
     <h1>Peminjaman Kelas</h1>
-            <h1>Selamat Datang <b><?php echo $session['nama']; ?></b></h1>
+            <h1>Selamat Datang <b><?php echo $this->session->userdata('nama'); ?></b></h1>
 
-  <?php
-
-if(isset($_POST['submit'])) {
-		$nim = $_POST['nim'];
-		$hari = $_POST['hari'];
-		$jam = $_POST['jam'];
-		$keperluan = $_POST['keperluan'];
-		// include database connection file
-		include_once("db.php");
-		$sql = "SELECT * FROM kelas WHERE nim = '$nim'";
-		$result = mysqli_query($db,$sql);
-     	$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-      
-      	$count = mysqli_num_rows($result);
     
-      if($count == 1) {
-      		echo "<h1 style=color:red;>Anda Sudah Meminjam kelas di minggu ini</h1>";
-        
-      }else {
-         $result = mysqli_query($db, "INSERT INTO kelas(nim,hari,jam,keperluan) VALUES('$nim','$hari','$jam','$keperluan')");
-		
-		header("location:gedung.php");
-      }
-		
-	}
-	?>
-    
-<form action="" method="post" name="form">
+<form action="<?php echo base_url().'index.php/control_peminjaman/proses_kelas' ?>" method="post" name="form">
   <div class="form-group col-md-8">
       <label for="inputState">Pilih Hari</label>
       <select <select class="form-control" name="hari" >>
@@ -82,56 +42,11 @@ if(isset($_POST['submit'])) {
     	<label for="exampleFormControlTextarea1">Keperluan</label>
     	<textarea name=keperluan class="form-control" id="exampleFormControlTextarea1" rows=""></textarea>
   		</div>
-      <input type="hidden" name="nim" value="<?php echo $user; ?>  " ></br>
+      <input type="hidden" name="nim" value="<?php echo $this->session->userdata('nama'); ?>  " ></br>
   	<button type="submit" name="submit" class="btn btn-primary">Submit</button>
-    <button type="submit" name= "logout" class="btn btn-primary" >Logout</button>
+    <button type="submit" name= "logout" class="btn btn-primary" >Kembali</button>
 
 
-<?php
-
-   
-    $user = $_SESSION['user'];
-	$query = mysqli_query($db, "SELECT * FROM kelas WHERE nim = '$user' ");
-	$surat = mysqli_fetch_assoc($query);
-   
-?>
-
-
- <?php
-if($status == "ya"){
-	echo "<div class='jumbotron'>
-  <h2 class='display-4'>UDINUS SEMARANG</h2>
- <h3 style=color:green;>Permintaan Kelas Diterima</h3>
-  <p class='lead'>Terima kasih "; ?><?php echo $session['nama']?><?php echo " permintaan peminjaman kelasmu untuk hari";?> <?php echo $surat['hari']?><?php echo " pada jam "; ?><?php echo $surat['jam']?><?php echo " di ruangan"; ?><?php echo $surat['kelas']?></p><?php
-  echo "<hr class='my-4'>
-  
-</div>";
-
-}elseif($status == "tidak"){
-	echo "<div class='jumbotron'>
-  <h2 class='display-4'>UDINUS SEMARANG</h2>
- <h3 style=color:red;>Permintaan Kelas TIDAK Diterima</h3>
-  <p class='lead'>Mohon maaf "; ?><?php echo $session['nama']?><?php echo " permintaan peminjaman kelasmu untuk hari";?> <?php echo $surat['hari']?><?php echo " pada jam "; ?><?php echo $surat['jam']?><?php echo " di ruangan"; ?><?php echo $surat['kelas']?></p><?php
-  echo "<hr class='my-4'>
-  
-</div>";
-}else{
-	echo "";
-}
-
- ?>
-
-  <?php
-
-require_once "db.php";
-if(isset($_POST['logout'])){
-	if ( session_destroy() ){
-    header('Location: index.php');
-	}	
-}
-
-
-?>
     </div>
     
 </form>
