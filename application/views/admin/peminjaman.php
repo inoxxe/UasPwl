@@ -197,7 +197,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/forms/general.html" class="nav-link">
+                <a href="<?php echo base_url().'index.php/admin/matakuliah'; ?>" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Input Mata Kuliah</p>
                 </a>
@@ -226,19 +226,12 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/tables/simple.html" class="nav-link">
+                <a href="<?php echo base_url().'index.php/admin/daftar'; ?>" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Simple Tables</p>
+                  <p>Daftar Peminjam</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="pages/tables/data.html" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Data Tables</p>
-                </a>
-              </li>
-            </ul>
-          </li>
+              
           
           
           
@@ -251,92 +244,13 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Dashboard</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v2</li>
-            </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
     <!-- /.content-header -->
 
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
-        <div class="row">
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>150</h3>
-
-                <p>New Orders</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-                <p>Bounce Rate</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-warning">
-              <div class="inner">
-                <h3>44</h3>
-
-                <p>User Registrations</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-person-add"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>65</h3>
-
-                <p>Unique Visitors</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-pie-graph"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-        </div>
-        <!-- /.row -->
-        <!-- Main row -->
-        <div class="row">
+               <div class="row">
           <!-- Left col -->
           <section class="col-lg-12 connectedSortable">
             
@@ -354,16 +268,15 @@
 
                 <div class="card-body">
                   <table border="1" style="border-collapse: collapse;">
-                    <tr style="background: grey">
-                        <th scope="col">No</th>
-            <th scope="col">NIM</th>
-            <th scope="col">Hari</th>
-            <th scope="col">Jam</th>
-            <th scope="col">Kelas</th>
-            <th scope="col">Keperluan</th>
-            <th scope="col">Verifikasi</th>
-            <th scope="col">Action</th>
-            <td colspan="2"></td>
+                    <tr style="background: grey; text-align: left;"  >
+                          <th scope="col">No</th>
+                          <th scope="col">NIM</th>
+                          <th scope="col">Hari</th>
+                          <th scope="col">Jam</th>
+                          <th scope="col">Kelas</th>
+                          <th scope="col">Keperluan</th>
+                          <th scope="col" colspan="2">Verifikasi</th>
+                          <th scope="col">Action</th>
                     </tr>
                 <?php foreach ($data as $krs) {?>
                     <tr>
@@ -373,10 +286,9 @@
                       <td><?php echo $krs['jam']; ?></td>
                       <td><?php echo $krs['kelas']; ?></td>
                       <td><?php echo $krs['keperluan']; ?></td>
-
-                        <td><a href="<?php echo base_url('index.php/admin/ya/').$krs['nim']; ?>">Ya</a></td>
-                        <td><a href="<?php echo base_url('index.php/admin/tidak/').$krs['nim']; ?>">tidak</a></td>
-                        <td><a href="<?php echo base_url('index.php/admin/delete_data/').$krs['id']; ?>">Delete</td>
+                      <td><a href="<?php echo base_url('index.php/admin/ya/').$krs['nim']; ?>">Ya</a></td>
+                      <td><a href="<?php echo base_url('index.php/admin/tidak/').$krs['nim']; ?>">tidak</a></td>
+                      <td><a href="<?php echo base_url('index.php/admin/delete_data/').$krs['id']; ?>">Delete</td>
                   </tr>
                   <?php } ?>
               </table>
@@ -389,11 +301,7 @@
 
             </div>
           </div>
-            
-
-
-
-
+     <!-- /.card -->
           </section>
           <!-- /.Left col -->
           <!-- right col (We are only adding the ID to make the widgets sortable)-->

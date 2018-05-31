@@ -42,7 +42,7 @@
     	<label for="exampleFormControlTextarea1">Keperluan</label>
     	<textarea name=keperluan class="form-control" id="exampleFormControlTextarea1" rows=""></textarea>
   		</div>
-      <input type="hidden" name="nim" value="<?php echo $this->session->userdata('nama'); ?>  " ></br>
+      <input type="hidden" name="nim" value="<?php echo $this->session->userdata('username'); ?>  " ></br>
   	<button type="submit" name="submit" class="btn btn-primary">Submit</button>
     <button type="submit" name= "logout" class="btn btn-primary" >Kembali</button>
 

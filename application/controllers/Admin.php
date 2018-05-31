@@ -84,7 +84,7 @@ class Admin extends CI_Controller {
 	    $id = array('id' => $id);
 	    $this->load->model('model_peminjaman');
 	    $this->model_peminjaman->Delete('kelas', $id);
-	    redirect('admin/peminjaman','refresh');
+	    redirect('admin/daftar');
 	}
 
 	public function daftar()
@@ -95,24 +95,21 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/peminjaman', $data);
 	}
 
-	/*public function ya($id)
+	public function ya($id)
 	{
-		$this->load->model('modeladmin');
-	    $krs = $this->modeladmin->GetWhere('register', array('nim' => $id));
-	    $data = array(
-	    'nim' => $krs[0]['nim'],
-        );
-		$nim = $id;
+		$id = array('nim' => $id);
 	    $status = "ya";
 	    $data = array(
 	        'status' => $status
 	     );
 	    $where = array(
-	        'nim' => $nim
+	        'nim' => $id,
 	    );
 	    $this->load->model('model_peminjaman');
 	    $res = $this->model_peminjaman->Update('register', $data, $where);
-	        redirect('admin/peminjaman','refresh');
-	}*/
+	    if ($res>0) {
+	        redirect('admin/daftar');
+	    }
+	}
 
 }
