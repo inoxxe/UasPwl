@@ -351,8 +351,7 @@
                 <h3 class="card-title">Data Mata Kuliah</h3>
               </div>
               <!-- /.card-header -->
-              <!-- form start -->
-              <form method="POST" action="<?php echo base_url().'index.php/admin/'; ?>"  role="form">
+
                 <div class="card-body">
                   <table border="1" style="border-collapse: collapse;">
                     <tr style="background: grey">
@@ -375,9 +374,9 @@
                       <td><?php echo $krs['kelas']; ?></td>
                       <td><?php echo $krs['keperluan']; ?></td>
 
-                        <td><a href="<?php echo base_url('index.php/admin/editmatkul/').$krs['id']; ?>">ya
-                        <a href="<?php echo base_url('index.php/admin/editmatkul/').$krs['id']; ?>">tidak</td>
-                        <td><a href="<?php echo base_url('index.php/control_peminjaman/delete_data/').$krs['id']; ?>">Delete</td>
+                        <td><a href="<?php echo base_url('index.php/admin/ya/').$krs['nim']; ?>">Ya</a></td>
+                        <td><a href="<?php echo base_url('index.php/admin/tidak/').$krs['nim']; ?>">tidak</a></td>
+                        <td><a href="<?php echo base_url('index.php/admin/delete_data/').$krs['id']; ?>">Delete</td>
                   </tr>
                   <?php } ?>
               </table>

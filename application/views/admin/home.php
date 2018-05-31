@@ -226,7 +226,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo base_url().'index.php/control_peminjaman/daftar'; ?>" class="nav-link">
+                <a href="<?php echo base_url().'index.php/admin/daftar'; ?>" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Daftar Peminjam</p>
                 </a>

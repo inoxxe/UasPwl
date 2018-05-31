@@ -25,35 +25,35 @@
 <div class='card' style='width: 18rem;'>
   <i class='fa fa-building' style='font-size:36px'></i>
   <div class='card-body'>
-    <a href='ruang/h3.php'><h5 class='card-title'>H3</h5></a>
+    <a href="<?php echo base_url('index.php/control_peminjaman/h3');?>"><h5 class='card-title'>H3</h5></a>
     
   </div>
 </div>
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <a href="ruang/h4.php"><h5 class="card-title">H4</h5></a>
+    <a href="<?php echo base_url('index.php/control_peminjaman/h4');?>"><h5 class="card-title">H4</h5></a>
     
   </div>
 </div>
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <a href="ruang/h5.php"><h5 class="card-title">H5</h5></a>
+    <a href="<?php echo base_url('index.php/control_peminjaman/h5');?>"><h5 class="card-title">H5</h5></a>
     
   </div>
 </div>
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <a href="ruang/h6.php"><h5 class="card-title">H6</h5></a>
+    <a href="<?php echo base_url('index.php/control_peminjaman/h6');?>"><h5 class="card-title">H6</h5></a>
     
   </div>
 </div>
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <a href="ruang/h7.php"><h5 class="card-title">H7</h5></a>
+    <a href="<?php echo base_url('index.php/control_peminjaman/h7');?>"><h5 class="card-title">H7</h5></a>
     
   </div>
 </div>

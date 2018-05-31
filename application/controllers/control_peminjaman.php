@@ -19,13 +19,92 @@ class Control_peminjaman extends CI_Controller {
 				
 			}
 
-			function gedung()
+	function gedung()
 		{
 			
 			if($this->session->userdata('akses'))
 			{
 			
 					$this->load->view('gedung');
+					
+				}
+				else{
+					
+					$this->load->view('helloworld/index');
+				}
+				
+			}
+	function h3()
+		{
+			
+			if($this->session->userdata('akses'))
+			{
+			
+					$this->load->view('ruang/h3');
+					
+				}
+				else{
+					
+					$this->load->view('helloworld/index');
+				}
+				
+			}
+
+	function h4()
+		{
+			
+			if($this->session->userdata('akses'))
+			{
+			
+					$this->load->view('ruang/h4');
+					
+				}
+				else{
+					
+					$this->load->view('helloworld/index');
+				}
+				
+			}
+
+	function h5()
+		{
+			
+			if($this->session->userdata('akses'))
+			{
+			
+					$this->load->view('ruang/h5');
+					
+				}
+				else{
+					
+					$this->load->view('helloworld/index');
+				}
+				
+		}
+
+	function h6()
+		{
+			
+			if($this->session->userdata('akses'))
+			{
+			
+					$this->load->view('ruang/h6');
+					
+				}
+				else{
+					
+					$this->load->view('helloworld/index');
+				}
+				
+			}	
+
+	function h7()
+		{
+			
+			if($this->session->userdata('akses'))
+			{
+			
+					$this->load->view('ruang/h7');
 					
 				}
 				else{
@@ -47,42 +126,7 @@ class Control_peminjaman extends CI_Controller {
     	redirect(base_url('index.php/control_peminjaman/gedung'));
 		}
 
-		public function prosesedit()
-	{
-		$id = $_POST['id'];
-	    $matakuliah = $_POST['matakuliah'];
-	    $jamm = $_POST['jamm'];
-	    $jams = $_POST['jams'];
-	    $data = array(
-	        'matkul' => $matakuliah,
-	        'jammulai' => $jamm,
-	        'jamselesai' => $jams,
-	     );
-	    $where = array(
-	        'id' => $id,
-	    );
-	    $this->load->model('modeladmin');
-	    $res = $this->modeladmin->Update('matakuliah', $data, $where);
-	    if ($res>0) {
-	        redirect('admin/matakuliah','refresh');
-	    }
-	}
-
-	public function delete_data($id)
-	{
-	    $id = array('id' => $id);
-	    $this->load->model('model_peminjaman');
-	    $this->model_peminjaman->Delete('kelas', $id);
-	    redirect('admin/peminjaman','refresh');
-	}
-
-	public function daftar()
-	{
-		$this->load->model('model_peminjaman');
-		$data = $this->model_peminjaman->GetMahasiswa('kelas');
-		$data = array('data' => $data );
-		$this->load->view('admin/peminjaman', $data);
-	}
+	
 }
 
 ?>

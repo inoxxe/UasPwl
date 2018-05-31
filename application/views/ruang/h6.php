@@ -1,5 +1,3 @@
-<?php require_once ("db.php"); ?>
-
 <html lang="en">
 <head>
   <title>E-class</title>
@@ -13,31 +11,10 @@
 </head>
 <body>
 
-<?php
-   session_start();
-   
-  $user = $_SESSION['user'];
-	$query = mysqli_query($db, "SELECT * FROM user WHERE nim = '$user' ");
-	$session = mysqli_fetch_assoc($query);
-   
-   if(!isset($_SESSION['user'])){
-      header("location:index.php");
-   }
-?>
-
-<?php
-  
-  $user = $_SESSION['user'];
-  $query = mysqli_query($db, "SELECT * FROM kelas WHERE nim = '$user' ");
-  $surat = mysqli_fetch_assoc($query);
-  $jam = $surat['jam']; 
-  $hari = $surat['hari'];
-   
-?>
-
 <div class="container">
     <h1>Peminjaman Kelas</h1>
-            <h1>Selamat Datang <b><?php echo $session['nama']; ?></b></h1>
+            <h1>Selamat Datang <b><?php echo $this->session->userdata('nama'); ?></b></h1>
+</div>
 
   
 <table>
@@ -47,21 +24,7 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <a href="input.php?id=<?php echo "H6.1"; ?>"><h5 class="card-title">H6.1</h5></a>
-    <?php  
-    include_once("db.php");
-    $kelas = "H6.1";
-    $sql = "SELECT 'kelas','jam','hari' FROM jadwal WHERE kelas = '$kelas' AND jam = '$jam' AND hari = '$hari'  ";
-    $result = mysqli_query($db,$sql);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $count = mysqli_num_rows($result);
-      if($count == 1) {
-          echo "<p style=color:red;>Unavailable</p>";
-        
-      }else {
-        echo "<p style=color:green;>Available</p>";
-      }
-      ?>
+    <p>H6.1</p>
   </div>
 </div>
 <div class="container">
@@ -70,21 +33,7 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <a href="input.php?id=<?php echo "H6.1"; ?>"><h5 class="card-title">H6.2</h5></a>
-    <?php  
-    include_once("db.php");
-    $kelas = "H6.2";
-    $sql = "SELECT 'kelas','jam','hari' FROM jadwal WHERE kelas = '$kelas' AND jam = '$jam' AND hari = '$hari'  ";
-    $result = mysqli_query($db,$sql);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $count = mysqli_num_rows($result);
-      if($count == 1) {
-          echo "<p style=color:red;>Unavailable</p>";
-        
-      }else {
-        echo "<p style=color:green;>Available</p>";
-      }
-      ?>
+    <p>H6.2</p>
   </div>
 </div>
 <div class="container">
@@ -93,21 +42,7 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <a href="input.php?id=<?php echo "H6.1"; ?>"><h5 class="card-title">H6.3</h5></a>
-    <?php  
-    include_once("db.php");
-    $kelas = "H6.3";
-    $sql = "SELECT 'kelas','jam','hari' FROM jadwal WHERE kelas = '$kelas' AND jam = '$jam' AND hari = '$hari'  ";
-    $result = mysqli_query($db,$sql);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $count = mysqli_num_rows($result);
-      if($count == 1) {
-          echo "<p style=color:red;>Unavailable</p>";
-        
-      }else {
-        echo "<p style=color:green;>Available</p>";
-      }
-      ?>
+    <p>H6.3</p>
   </div>
 </div>
 <div class="container">
@@ -116,21 +51,7 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <a href="input.php?id=<?php echo "H6.1"; ?>"><h5 class="card-title">H6.4</h5></a>
-    <?php  
-    include_once("db.php");
-    $kelas = "H6.4";
-    $sql = "SELECT 'kelas','jam','hari' FROM jadwal WHERE kelas = '$kelas' AND jam = '$jam' AND hari = '$hari'  ";
-    $result = mysqli_query($db,$sql);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $count = mysqli_num_rows($result);
-      if($count == 1) {
-          echo "<p style=color:red;>Unavailable</p>";
-        
-      }else {
-        echo "<p style=color:green;>Available</p>";
-      }
-      ?>
+    <p>H6.4</p>
   </div>
 </div>
 <div class="container">
@@ -139,21 +60,7 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <a href="input.php?id=<?php echo "H6.1"; ?>"><h5 class="card-title">H6.5</h5></a>
-    <?php  
-    include_once("db.php");
-    $kelas = "H6.5";
-    $sql = "SELECT 'kelas','jam','hari' FROM jadwal WHERE kelas = '$kelas' AND jam = '$jam' AND hari = '$hari'  ";
-    $result = mysqli_query($db,$sql);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $count = mysqli_num_rows($result);
-      if($count == 1) {
-          echo "<p style=color:red;>Unavailable</p>";
-        
-      }else {
-        echo "<p style=color:green;>Available</p>";
-      }
-      ?>
+    <p>H6.5</p>
   </div>
 </div>
 <div class="container">
@@ -162,21 +69,7 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <a href="input.php?id=<?php echo "H6.1"; ?>"><h5 class="card-title">H6.6</h5></a>
-    <?php  
-    include_once("db.php");
-    $kelas = "H6.6";
-    $sql = "SELECT 'kelas','jam','hari' FROM jadwal WHERE kelas = '$kelas' AND jam = '$jam' AND hari = '$hari'  ";
-    $result = mysqli_query($db,$sql);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $count = mysqli_num_rows($result);
-      if($count == 1) {
-          echo "<p style=color:red;>Unavailable</p>";
-        
-      }else {
-        echo "<p style=color:green;>Available</p>";
-      }
-      ?>
+    <p>H6.6</p>
   </div>
 </div>
 <div class="container">
@@ -185,21 +78,7 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <a href="input.php?id=<?php echo "H6.1"; ?>"><h5 class="card-title">H6.7</h5></a>
-    <?php  
-    include_once("db.php");
-    $kelas = "H6.7";
-    $sql = "SELECT 'kelas','jam','hari' FROM jadwal WHERE kelas = '$kelas' AND jam = '$jam' AND hari = '$hari'  ";
-    $result = mysqli_query($db,$sql);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $count = mysqli_num_rows($result);
-      if($count == 1) {
-          echo "<p style=color:red;>Unavailable</p>";
-        
-      }else {
-        echo "<p style=color:green;>Available</p>";
-      }
-      ?>
+    <p>H6.7</p>
   </div>
 </div>
 <div class="container">
@@ -208,21 +87,7 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <a href="input.php?id=<?php echo "H6.1"; ?>"><h5 class="card-title">H6.8</h5></a>
-    <?php  
-    include_once("db.php");
-    $kelas = "H6.8";
-    $sql = "SELECT 'kelas','jam','hari' FROM jadwal WHERE kelas = '$kelas' AND jam = '$jam' AND hari = '$hari'  ";
-    $result = mysqli_query($db,$sql);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $count = mysqli_num_rows($result);
-      if($count == 1) {
-          echo "<p style=color:red;>Unavailable</p>";
-        
-      }else {
-        echo "<p style=color:green;>Available</p>";
-      }
-      ?>
+    <p>H6.8</p>
   </div>
 </div>
 <div class="container">
@@ -231,21 +96,7 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <a href="input.php?id=<?php echo "H6.1"; ?>"><h5 class="card-title">H6.9</h5></a>
-    <?php  
-    include_once("db.php");
-    $kelas = "H6.9";
-    $sql = "SELECT 'kelas','jam','hari' FROM jadwal WHERE kelas = '$kelas' AND jam = '$jam' AND hari = '$hari'  ";
-    $result = mysqli_query($db,$sql);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $count = mysqli_num_rows($result);
-      if($count == 1) {
-          echo "<p style=color:red;>Unavailable</p>";
-        
-      }else {
-        echo "<p style=color:green;>Available</p>";
-      }
-      ?>
+    <p>H6.9</p>
   </div>
 </div>
 <div class="container">
@@ -254,21 +105,7 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <a href="input.php?id=<?php echo "H6.1"; ?>"><h5 class="card-title">H6.10</h5></a>
-    <?php  
-    include_once("db.php");
-    $kelas = "H6.10";
-    $sql = "SELECT 'kelas','jam','hari' FROM jadwal WHERE kelas = '$kelas' AND jam = '$jam' AND hari = '$hari'  ";
-    $result = mysqli_query($db,$sql);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $count = mysqli_num_rows($result);
-      if($count == 1) {
-          echo "<p style=color:red;>Unavailable</p>";
-        
-      }else {
-        echo "<p style=color:green;>Available</p>";
-      }
-      ?>
+    <p>H6.10</p>
   </div>
 </div>
 <div class="container">
@@ -277,21 +114,7 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <a href="input.php?id=<?php echo "H6.1"; ?>"><h5 class="card-title">H6.11</h5></a>
-    <?php  
-    include_once("db.php");
-    $kelas = "H6.11";
-    $sql = "SELECT 'kelas','jam','hari' FROM jadwal WHERE kelas = '$kelas' AND jam = '$jam' AND hari = '$hari'  ";
-    $result = mysqli_query($db,$sql);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $count = mysqli_num_rows($result);
-      if($count == 1) {
-          echo "<p style=color:red;>Unavailable</p>";
-        
-      }else {
-        echo "<p style=color:green;>Available</p>";
-      }
-      ?>
+    <p>H6.11</p>
   </div>
 </div>
 <div class="container">
@@ -300,21 +123,7 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <a href="input.php?id=<?php echo "H6.1"; ?>"><h5 class="card-title">H6.12</h5></a>
-    <?php  
-    include_once("db.php");
-    $kelas = "H6.12";
-    $sql = "SELECT 'kelas','jam','hari' FROM jadwal WHERE kelas = '$kelas' AND jam = '$jam' AND hari = '$hari'  ";
-    $result = mysqli_query($db,$sql);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $count = mysqli_num_rows($result);
-      if($count == 1) {
-          echo "<p style=color:red;>Unavailable</p>";
-        
-      }else {
-        echo "<p style=color:green;>Available</p>";
-      }
-      ?>
+    <p>H6.12</p>
   </div>
 </div>
 <div class="container">
@@ -323,21 +132,7 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <a href="input.php?id=<?php echo "H6.1"; ?>"><h5 class="card-title">H6.13</h5></a>
-    <?php  
-    include_once("db.php");
-    $kelas = "H6.13";
-    $sql = "SELECT 'kelas','jam','hari' FROM jadwal WHERE kelas = '$kelas' AND jam = '$jam' AND hari = '$hari'  ";
-    $result = mysqli_query($db,$sql);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $count = mysqli_num_rows($result);
-      if($count == 1) {
-          echo "<p style=color:red;>Unavailable</p>";
-        
-      }else {
-        echo "<p style=color:green;>Available</p>";
-      }
-      ?>
+    <p>H6.13</p>
   </div>
 </div>
 </table>

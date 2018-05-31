@@ -10,10 +10,7 @@ class Admin extends CI_Controller {
 
 	public function peminjaman()
 	{
-		$this->load->model('Modeladmin');
-		$data = $this->Modeladmin->GetMahasiswa('kelas');
-		$data = array('data' => $data);
-		$this->load->view('admin/peminjaman', $data);
+		$this->load->view('admin/peminjaman');
 	}
 
 	public function matakuliah()
@@ -97,4 +94,25 @@ class Admin extends CI_Controller {
 		$data = array('data' => $data );
 		$this->load->view('admin/peminjaman', $data);
 	}
+
+	/*public function ya($id)
+	{
+		$this->load->model('modeladmin');
+	    $krs = $this->modeladmin->GetWhere('register', array('nim' => $id));
+	    $data = array(
+	    'nim' => $krs[0]['nim'],
+        );
+		$nim = $id;
+	    $status = "ya";
+	    $data = array(
+	        'status' => $status
+	     );
+	    $where = array(
+	        'nim' => $nim
+	    );
+	    $this->load->model('model_peminjaman');
+	    $res = $this->model_peminjaman->Update('register', $data, $where);
+	        redirect('admin/peminjaman','refresh');
+	}*/
+
 }
