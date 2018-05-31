@@ -108,6 +108,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!-- Team -->
 <div class="team-section" id="team">
+       <h2 align="center"></h2>
+        <div class="container">
+          <div class="row team-data">
+            <div class="col-md-3 w3_team">
+              <div class="team-profile">
+                <div class="member-img" align="center">
+                  <img src="<?php echo base_url('');?>" class="img-responsive" alt="">
+                </div>
+                <h4 align="center"></h4>
+        <h5></h5>
+        <p></p>
+            </div>
+            </div>
+              
+          </div>
+        </div>
+
         <h2 align="center">Our Staff</h2>
         <div class="container">
           <div class="row team-data">
@@ -194,7 +211,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="item">
                    <div class="row" style="padding: 20px">
                     <button style="border: none;"><i class="fa fa-quote-left testimonial_fa" aria-hidden="true"></i></button>
-                    <p class="testimonial_para">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en.</p><br>
+                    <p class="testimonial_para">Saya sangat senang menggunakannya.Karena sangat mudah diakses.</p><br>
                     <div class="row">
                     <div class="col-sm-1">
                         <img src="<?php echo base_url('images/t4.jpg');?>" class="img-responsive" style="width: 80px">
@@ -260,7 +277,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="col-md-4 agile_l">
 <h3>SI-DIN</h3>
 <p class="w3_pght">Hanya ingin membantu dan memudahkan siswa</p>
-<a href="mailto:info@example.com"> Support@didactic.com</a>
+<a href="mailto:info@example.com"> Support@sidin.com</a>
 </div>
 <div class="col-md-5 w3l_c">
 </div>
