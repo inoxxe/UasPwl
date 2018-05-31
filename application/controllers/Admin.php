@@ -95,15 +95,30 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/peminjaman', $data);
 	}
 
-	public function ya($id)
+	public function ya($nim)
 	{
-		$id = array('nim' => $id);
 	    $status = "ya";
 	    $data = array(
 	        'status' => $status
 	     );
 	    $where = array(
-	        'nim' => $id,
+	        'nim' => $nim,
+	    );
+	    $this->load->model('model_peminjaman');
+	    $res = $this->model_peminjaman->Update('register', $data, $where);
+	    if ($res>0) {
+	        redirect('admin/daftar');
+	    }
+	}
+
+	public function tidak($nim)
+	{
+	    $status = "tidak";
+	    $data = array(
+	        'status' => $status
+	     );
+	    $where = array(
+	        'nim' => $nim,
 	    );
 	    $this->load->model('model_peminjaman');
 	    $res = $this->model_peminjaman->Update('register', $data, $where);
