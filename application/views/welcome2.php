@@ -54,26 +54,59 @@ Licence URI: http://www.os-templates.com/template-terms
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
-  <div id="pageintro" class="hoc clear"> 
+ <div class="cotainer">
+  
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    
     <!-- ################################################################################################ -->
     <article>
-      <p>Selamat Datang</p>
-      <h3 class="heading">Silahkan Pilih</h3>
-      <footer>
-        <ul class="nospace inline pushright">
-          <li><a class="btn" href="#">KRS</a></li>
-          <li><a class="btn inverse" href="#">Peminjaman Kelas</a></li>
-        </ul>
-      </footer>
+      <div class="container">
+        <h1>Peminjaman Kelas</h1>
+        <h1>Selamat Datang <b><?php echo $this->session->userdata('nama'); ?></b></h1>
+      </div>
     </article>
-    <!-- ################################################################################################ -->
-  </div>
-  <!-- ################################################################################################ -->
+
+  
+    
+<form action="<?php echo base_url().'index.php/control_peminjaman/proses_kelas' ?>" method="post" name="form">
+  <div class="form-group col-md-12">
+      <label for="inputState">Pilih Hari</label>
+      <select <select class="form-control" name="hari" >
+        <option selected value="senin">Senin</option>
+        <option value="selasa">Selasa</option>
+        <option value="rabu">Rabu</option>
+        <option value="kamis">Kamis</option>
+        <option value="jumat">Jumat</option>
+      </select>
+    </div>
+    <div class="form-group col-md-12">
+      <label for="inputState">Pilih Jam</label>
+      <select id="inputState" name="jam" class="form-control">
+        <option value="07.00-09.30" selected>07.00-09.30</option>
+        <option value="07.00-08.40" >07.00-08.40</option>
+        <option value="08.40-10.20" >08.40-10.20</option>
+        <option vlaue="09.30-12.00" >09.30-12.00</option>
+        <option value="10.20-12.00" >10.20-12.00</option>
+        <option value="12.30-14.10" >12.30-14.10</option>       
+        <option value="12.30-15.00" >12.30-15.00</option>
+      </select>
+      <div class="form-group">
+      <label for="exampleFormControlTextarea1">Keperluan</label>
+      <textarea name=keperluan class="form-control" id="exampleFormControlTextarea1" rows=""></textarea>
+      </div>
+      <input type="hidden" name="nim" value="<?php echo $this->session->userdata('username'); ?>  " ></br>
+    <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" name= "logout" class="btn btn-primary" >Kembali</button>
+
+
+    </div>
+    
+</form>
+
 </div>
-<!-- End Top Background Image Wrapper -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
+
+   
 <div class="wrapper row5">
   <div id="copyright" class="hoc clear"> 
     <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">SI-DIN</a></p>
