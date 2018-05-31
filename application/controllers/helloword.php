@@ -47,9 +47,11 @@ class Helloword extends CI_Controller{
 			$this->session->set_userdata('login', TRUE);
 			if($data['level'] === 'Mahasiswa' )
 			{
+
 				$this->session->set_userdata('akses', 'Mahasiswa');
 				$this->session->set_userdata('username', $data['nim']);
 				$this->session->set_userdata('nama', $data['nama']);
+				$this->session->set_userdata('status', $data['status']);
 				redirect(base_url('index.php/control_peminjaman/kelas'));
 			}
 			

@@ -31,6 +31,9 @@ class MOdel_peminjaman extends CI_Model
       $res = $this->db->get_where($table, $where);
       return $res->result_array();
     }
+
+    
 }
+
 	
 ?>
