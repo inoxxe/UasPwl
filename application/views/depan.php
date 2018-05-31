@@ -114,11 +114,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-3 w3_team">
               <div class="team-profile">
                 <div class="member-img" align="center">
-                  <img src="<?php echo base_url('');?>" class="img-responsive" alt="">
+                  <img src="<?php echo base_url('images/tm1.jpg');?>" class="img-responsive" alt="">
                 </div>
-                <h4 align="center"></h4>
-        <h5></h5>
-        <p></p>
+                <h4 align="center">Member 1</h4>
+        <h5>Dosen</h5>
+        <p>Dosen Pemrograman Web Lanjut.</p>
+                <div class="member-social" align="center">
+                 <a href=""><i class="fa fa-instagram" aria-hidden="true"></i>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-google"></i></a>
+                </div>
             </div>
             </div>
               

@@ -9,7 +9,7 @@ class Control_peminjaman extends CI_Controller {
 			if($this->session->userdata('akses'))
 			{
 			
-					$this->load->view('welcome');
+					$this->load->view('welcome2');
 					
 				}
 				else{
