@@ -20,6 +20,9 @@ class Helloword extends CI_Controller{
 	public function formregister(){
 		$this->load->view('formregister');
 	}
+	public function daftar_mahasiswa(){
+		$this->load->view('daftar_mahasiswa');
+	}
 	public function daftarmahasiswa(){
 	$data=$this->load->model('model_operator');
 	$data=$this->model_operator->GetMahasiswa('register');

@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-	
+	<form action="<?php echo base_url('index.php/helloword/daftarmahasiswa'); ?>" method="post">
 	<table>
 
 		<tr style="background: orange;">
@@ -34,5 +34,6 @@
 			<?php } ?>
 		
 	</table>
-	</body>
+	</form>
+</body>
 </html>
