@@ -79,12 +79,23 @@ class Admin extends CI_Controller {
 
 	/// Punya INO
 
-	public function delete_data($id)
+	public function delete_data($nim)
 	{
-	    $id = array('id' => $id);
+		$status = "";
+	    $data = array(
+	        'status' => $status
+	     );
+	    $where = array(
+	        'nim' => $nim,
+	    );
 	    $this->load->model('model_peminjaman');
-	    $this->model_peminjaman->Delete('kelas', $id);
-	    redirect('admin/daftar');
+	    $res = $this->model_peminjaman->Update('register', $data, $where);
+	    $nim = array('nim' => $nim);
+	    $this->load->model('model_peminjaman');
+	    $this->model_peminjaman->Delete('kelas', $nim);
+	    if ($res>0) {
+	        redirect('admin/daftar');
+	    }
 	}
 
 	public function daftar()

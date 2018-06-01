@@ -143,6 +143,22 @@ class Control_peminjaman extends CI_Controller {
     	redirect(base_url('index.php/control_peminjaman/gedung'));
 		}
 
+	public function pilih($ruang)
+	{
+	    $nim = $this->session->userdata('username');
+	    $data = array(
+	        'kelas' => $ruang
+	     );
+	    $where = array(
+	        'nim' => $nim,
+	    );
+	    $this->load->model('model_peminjaman');
+	    $res = $this->model_peminjaman->Update('kelas', $data, $where);
+	    if ($res>0) {
+	        redirect(base_url('index.php/control_peminjaman/pinjam'));
+	    }
+	}
+
 	
 }
 

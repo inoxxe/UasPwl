@@ -288,7 +288,7 @@
                       <td><?php echo $krs['keperluan']; ?></td>
                       <td><a href="<?php echo base_url('index.php/admin/ya/').$krs['nim']; ?>">Ya</a></td>
                       <td><a href="<?php echo base_url('index.php/admin/tidak/').$krs['nim']; ?>">tidak</a></td>
-                      <td><a href="<?php echo base_url('index.php/admin/delete_data/').$krs['id']; ?>">Delete</td>
+                      <td><a href="<?php echo base_url('index.php/admin/delete_data/').$krs['nim']; ?>">Delete</td>
                   </tr>
                   <?php } ?>
               </table>

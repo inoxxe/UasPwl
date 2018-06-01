@@ -24,7 +24,9 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <p>H3.1</p>
+    <?php $ruang = "h3.1";?>
+    <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>">H3.1</a>
+
   </div>
 </div>
 <div class="container">
@@ -34,6 +36,8 @@
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
     <p>H3.2</p>
+    <?php $ruang = "h3.2";?>
+    <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>">H3.2</a>
   </div>
 </div>
 <div class="container">
