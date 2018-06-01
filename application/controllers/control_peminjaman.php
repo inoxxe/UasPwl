@@ -13,10 +13,12 @@ class Control_peminjaman extends CI_Controller {
 				}
 				else{
 					
-					$this->load->view('helloworld/index');
+					$this->load->view('helloword/index');
 				}
 				
 			}
+
+
 	function pinjam()
 		{
 			
@@ -31,7 +33,7 @@ class Control_peminjaman extends CI_Controller {
 				}
 				else{
 					
-					$this->load->view('helloworld/index');
+					$this->load->view('helloword/index');
 				}
 				
 			}

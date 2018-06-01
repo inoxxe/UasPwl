@@ -13,7 +13,7 @@
 
 <div class="container">
     <h1>Peminjaman Kelas</h1>
-            <h1>Selamat Datang <b><?php echo $this->session->userdata('nama'); ?></b></h1>
+            <h1>Selamat Datang <b><?php echo $this->session->userdata('nama'); $status = $this->session->userdata('status'); ?></b></h1>
 
     
 <form action="<?php echo base_url().'index.php/control_peminjaman/proses_kelas' ?>" method="post" name="form">
@@ -44,11 +44,12 @@
   		</div>
       <input type="hidden" name="nim" value="<?php echo $this->session->userdata('username'); ?>  " ></br>
   	<button type="submit" name="submit" class="btn btn-primary">Submit</button>
-    <button type="submit" name= "logout" class="btn btn-primary" >Kembali</button>
+    <button ><a href="<?php echo(base_url('index.php/control_peminjaman/kelas'))?>">back</a></button>
 
     <?php
+
+    echo $status;
     
-  $status = $this->session->userdata('status');
   if($status == "ya"){
 
     foreach ($data as $mhs) {

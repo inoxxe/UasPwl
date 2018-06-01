@@ -68,8 +68,8 @@ class Helloword extends CI_Controller{
 		}
 	}
 	public function logout(){
-		$this->session->session_destroy();
-		redirect('bagas/helloword/login');
+		$this->session->sess_destroy();
+		redirect(base_url('index.php/helloword/index'));
 	}
 	
 	public function prosesregister()

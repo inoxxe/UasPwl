@@ -45,7 +45,7 @@ Licence URI: http://www.os-templates.com/template-terms
       <nav id="mainav" class="fl_right">
         <ul class="clear">
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#">LOGOUT</a></li>
+          <li><a href="<?php echo(base_url('index.php/helloword/logout'));?>">LOGOUT</a></li>
         </ul>
       </nav>
       <!-- ################################################################################################ -->
