@@ -31,5 +31,17 @@ class Model_operator extends CI_Model{
 		$res=$this->db->get($table);//memilih tabel
 		return $res->result_array();//mengembalikan hasil
 	}
-
+	public function Update($table, $data, $where){
+        $data = $this->db->update($table, $data, $where); // Kode ini digunakan untuk merubah record yang sudah ada dalam sebuah tabel
+        return $data;
+    }
+        public function Delete($table, $where){
+        $data = $this->db->delete($table, $where); // Kode ini digunakan untuk menghapus record yang sudah ada
+        return $data;
+    }
+    public function GetWhere($table, $where)
+    {
+      $res = $this->db->get_where($table, $where);
+      return $res->result_array();
+    }
 }

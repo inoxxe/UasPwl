@@ -293,35 +293,63 @@
 
     <!-- Main content -->
     <section class="content">
-    	<table border=1>
+    	<form action="<?php echo base_url('index.php/helloword/prosesedit'); ?>" method="post">
+      <input type="hidden" name="id" value="<?php echo $id; ?>" >
 
-		<tr style="background: orange;">
-				<td>Id</td>
-				<td>NIM</td>
-				<td>Nama</td>
-				<td>Jenis Kelamin</td>
-				<td>Tgl Lahir</td>
-				<td>Alamat</td>
-				<td>Jurusan</td>
-				<td>Nama Orangtua</td>
-				<td colspan="2">Eksekusi</td>
-			</tr>
-			<?php foreach ($data as $mahasiswa) { ?>
-				<tr bgcolor="white">
-					<td><?php echo $mahasiswa['id'];?></td>
-					<td><?php echo $mahasiswa['nim'];?></td>
-					<td><?php echo $mahasiswa['nama'];?></td>
-					<td><?php echo $mahasiswa['jns_klmn'];?></td>
-					<td><?php echo $mahasiswa['lahir'];?></td>
-					<td><?php echo $mahasiswa['alamat'];?></td>
-					<td><?php echo $mahasiswa['jurusan'];?></td>
-					<td><?php echo $mahasiswa['orangtua'];?></td>
-					<td><a href="<?php echo base_url('index.php/helloword/editmhs/').$mahasiswa['id']; ?>">Edit</td>
-                     <td><a href="<?php echo base_url('index.php/helloword/delete/').$mahasiswa['id']; ?>">Delete</td>
-				</tr>
-			<?php } ?>
+	<table>
+		<tr>
+			<td>NIM</td>
+			<td>:</td>
+			<td><input type="text" name="nim"></td>
+		</tr>
+		<tr>
+			<td>Nama Mahasiswa</td>
+			<td>:</td>
+			<td><input type="text" name="nama"></td>
+		</tr>
+		<tr>
+			<td>Jenis Kelamin</td>
+			<td>:</td>
+			<td>
+				<select name="jns_klmn">
+					<option>Laki-Laki</option>
+					<option>Perempuan</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Tgl Lahir</td>
+			<td>:</td>
+			<td><input type="text" name="lahir"></td>
+		</tr>
+		<tr>
+			<td>Alamat</td>
+			<td>:</td>
+			<td><textarea name="alamat"></textarea></td>
+		</tr>
+		<tr>
+			<td>Jurusan</td>
+			<td>:</td>
+			<td>
+				<select name="jurusan">
+					<option>Teknik Informatika S1</option>
+					<option>Teknik Informatika D3</option>
+					<option>Design Kompunikasi Visual S1</option>
+					<option>Sistem Informasi S1</option>
+					<option>Ilmu Komunikasi S1</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Nama Orang Tua</td>
+			<td>:</td>
+			<td><input type="text" name="orangtua"></td>
+		</tr>
+	
 		
 	</table>
+	<button type="submit">SUBMIT</button>
+	</form>
     </section>
     <!-- /.content -->
   </div>
@@ -381,6 +409,3 @@
 <script src="dist/js/demo.js"></script>
 </body>
 </html>
-
-	
-	
