@@ -316,7 +316,8 @@
 					<td><?php echo $mahasiswa['alamat'];?></td>
 					<td><?php echo $mahasiswa['jurusan'];?></td>
 					<td><?php echo $mahasiswa['orangtua'];?></td>
-					
+					<td><a href="<?php echo base_url('index.php/admin/editmatkul/').$krs['id']; ?>">Edit</td>
+                     <td><a href="<?php echo base_url('index.php/admin/delete_matkul/').$krs['id']; ?>">Delete</td>
 				</tr>
 			<?php } ?>
 		
