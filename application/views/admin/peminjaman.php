@@ -202,18 +202,6 @@
                   <p>Input Mata Kuliah</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="pages/forms/advanced.html" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Advanced Elements</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/forms/editors.html" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Editors</p>
-                </a>
-              </li>
             </ul>
           </li>
           <li class="nav-item has-treeview">
@@ -229,6 +217,31 @@
                 <a href="<?php echo base_url().'index.php/admin/daftar'; ?>" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Daftar Peminjam</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-edit"></i>
+              <p>
+                Pendaftaran Mahasiswa
+                <i class="fa fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?php echo base_url().'index.php/helloword/formregister'; ?>" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Input Data Mahasiswa</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url().'index.php/helloword/daftar_mahasiswa'; ?>" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Daftar Data Mahasiswa</p>
                 </a>
               </li>
               

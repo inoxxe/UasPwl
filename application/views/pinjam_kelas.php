@@ -47,9 +47,7 @@
     <button ><a href="<?php echo(base_url('index.php/control_peminjaman/kelas'))?>">back</a></button>
 
     <?php
-
-    echo $status;
-    
+        
   if($status == "ya"){
 
     foreach ($data as $mhs) {
@@ -67,10 +65,7 @@
   <p class='lead'>Terima kasih "; ?><?php echo $this->session->userdata('nama'); ?><?php echo " permintaan peminjaman kelasmu untuk hari ";?><?php echo $mhs['hari'];?><?php echo " jam ";?><?php echo $mhs['jam'];?><?php echo " di ruangan "?><?php echo $mhs['kelas'];?><?php
     }
   }elseif ($status == "") {
-    echo "<div class='jumbotron'>
-  <h2 class='display-4'>UDINUS SEMARANG</h2>
- <h3 style=color:grey;>Menunggu konfirmasi TU</h3>
-  <p class='lead'>Terima kasih "; ?><?php
+    echo ""; ?><?php
   }
 ?>
 

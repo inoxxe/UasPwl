@@ -219,12 +219,7 @@
                   <p>Daftar Peminjam</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="pages/tables/data.html" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Data Tables</p>
-                </a>
-              </li>
+              
             </ul>
           </li>
 
