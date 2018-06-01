@@ -127,4 +127,8 @@ class Admin extends CI_Controller {
 	    }
 	}
 
+
+	//punya bagas
+	
+
 }
