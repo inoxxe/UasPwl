@@ -24,7 +24,9 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <p>H7.1</p>
+    <?php $ruang = "h7.1";?>
+    <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>">h7.1</a>
+
   </div>
 </div>
 <div class="container">
@@ -33,7 +35,8 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <p>H7.2</p>
+    <?php $ruang = "h7.2";?>
+    <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>">h7.2</a>
   </div>
 </div>
 <div class="container">
@@ -42,8 +45,8 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <p>H7.3</p>
-  </div>
+    <?php $ruang = "h7.3";?>
+    <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>">h7.3</a>  </div>
 </div>
 <div class="container">
 <div class="row">
@@ -51,7 +54,8 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <p>H7.4</p>
+    <?php $ruang = "h7.4";?>
+    <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>">h7.4</a>
   </div>
 </div>
 </table>

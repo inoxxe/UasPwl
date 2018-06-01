@@ -35,7 +35,6 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <p>H3.2</p>
     <?php $ruang = "h3.2";?>
     <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>">H3.2</a>
   </div>
@@ -46,7 +45,17 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <p>H3.3</p>
+    <?php $ruang = "h3.3";?>
+    <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>">H3.3</a>  </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="card" style="width: 18rem;">
+  <i class="fa fa-building" style="font-size:36px"></i>
+  <div class="card-body">
+    <?php $ruang = "h3.4";?>
+    <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>">H3.4</a>
   </div>
 </div>
 <div class="container">
@@ -55,7 +64,8 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <p>H3.4</p>
+    <?php $ruang = "h3.5";?>
+    <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>">H3.5</a>
   </div>
 </div>
 <div class="container">
@@ -64,7 +74,8 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <p>H3.5</p>
+    <?php $ruang = "h3.6";?>
+    <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>">H3.6</a>
   </div>
 </div>
 <div class="container">
@@ -73,7 +84,8 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <p>H3.6</p>
+    <?php $ruang = "h3.7";?>
+    <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>">H3.7</a>
   </div>
 </div>
 <div class="container">
@@ -82,7 +94,8 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <p>H3.7</p>
+    <?php $ruang = "h3.8";?>
+    <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>">H3.8</a>
   </div>
 </div>
 <div class="container">
@@ -91,7 +104,8 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <p>H3.8</p>
+    <?php $ruang = "h3.9";?>
+    <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>">H3.9</a>
   </div>
 </div>
 <div class="container">
@@ -100,7 +114,8 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <p>H3.9</p>
+    <?php $ruang = "h3.10";?>
+    <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>">H3.10</a>
   </div>
 </div>
 <div class="container">
@@ -109,7 +124,8 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <p>H3.10</p>
+    <?php $ruang = "h3.11";?>
+    <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>">H3.11</a>
   </div>
 </div>
 <div class="container">
@@ -118,7 +134,8 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <p>H3.11</p>
+    <?php $ruang = "h3.12";?>
+    <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>">H3.12</a>
   </div>
 </div>
 <div class="container">
@@ -127,16 +144,8 @@
 <div class="card" style="width: 18rem;">
   <i class="fa fa-building" style="font-size:36px"></i>
   <div class="card-body">
-    <p>H3.12</p>
-  </div>
-</div>
-<div class="container">
-<div class="row">
-<div class="col">
-<div class="card" style="width: 18rem;">
-  <i class="fa fa-building" style="font-size:36px"></i>
-  <div class="card-body">
-    <p>H3.13</p>
+    <?php $ruang = "h3.13";?>
+    <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>">H3.13</a>
   </div>
 </div>
 </table>
