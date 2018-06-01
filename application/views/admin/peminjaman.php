@@ -278,9 +278,9 @@
                           <th scope="col" colspan="2">Verifikasi</th>
                           <th scope="col">Action</th>
                     </tr>
-                <?php foreach ($data as $krs) {?>
+                <?php $no =1; foreach ($data as $krs) {?>
                     <tr>
-                      <td><?php echo $krs['id']; ?></td>
+                      <td><?php echo $no++; ?></td>
                       <td><?php echo $krs['nim']; ?></td>
                       <td><?php echo $krs['hari']; ?></td>
                       <td><?php echo $krs['jam']; ?></td>

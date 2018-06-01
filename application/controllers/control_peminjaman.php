@@ -8,10 +8,6 @@ class Control_peminjaman extends CI_Controller {
 			
 			if($this->session->userdata('akses'))
 			{
-				/*$this->load->model('model_peminjaman');
-				$where = $this->session->userdata('nim');
-				$data = $this->model_peminjaman->GetWhere('kelas',$where);
-				$data = array('data' => $data );*/
 				$this->load->view('welcome');
 					
 				}
@@ -26,8 +22,11 @@ class Control_peminjaman extends CI_Controller {
 			
 			if($this->session->userdata('akses'))
 			{
-				
-				$this->load->view('pinjam_kelas');
+				$this->load->model('model_peminjaman');
+				$where = $this->session->userdata('nim');
+				$data = $this->model_peminjaman->GetWhere('kelas',$where);
+				$data = array('data' => $data );	
+				$this->load->view('pinjam_kelas',$data);
 					
 				}
 				else{

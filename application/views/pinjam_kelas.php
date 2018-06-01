@@ -50,10 +50,14 @@
     
   $status = $this->session->userdata('status');
   if($status == "ya"){
-    echo "<div class='jumbotron'>
+
+    foreach ($data as $mhs) {
+      echo "<div class='jumbotron'>
   <h2 class='display-4'>UDINUS SEMARANG</h2>
  <h3 style=color:green;>Permintaan Kelas Diterima</h3>
-  <p class='lead'>Terima kasih "; ?><?php echo $this->session->userdata('nama'); ?><?php echo " permintaan peminjaman kelasmu untuk hari";?><?php echo $set['hari'];?><?php
+  <p class='lead'>Terima kasih "; ?><?php echo $this->session->userdata('nama'); ?><?php echo " permintaan peminjaman kelasmu untuk hari ";?><?php echo $mhs['hari'];?><?php echo " jam ";?><?php echo $mhs['jam'];?><?php echo " di ruangan "?><?php echo $mhs['kelas'];?><?php
+    }
+    
   }elseif($status == "tidak"){
     echo "Maaf";
   }
