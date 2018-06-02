@@ -58,7 +58,7 @@ class Helloword extends CI_Controller{
 				$this->session->set_userdata('akses', 'Admin');
 				$this->session->set_userdata('username', $data['nim']);
 				$this->session->set_userdata('nama', $data['nama']);
-				redirect(base_url('/'));
+				redirect(base_url('index.php/admin/index'));
 			}
 			
 		}else{
