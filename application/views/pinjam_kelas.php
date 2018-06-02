@@ -19,7 +19,7 @@
 <form action="<?php echo base_url().'index.php/control_peminjaman/proses_kelas' ?>" method="post" name="form">
   <div class="form-group col-md-8">
       <label for="inputState">Pilih Hari</label>
-      <select <select class="form-control" name="hari"
+      <select <select class="form-control" name="hari">
         <option selected value="senin">Senin</option>
         <option value="selasa">Selasa</option>
         <option value="rabu">Rabu</option>

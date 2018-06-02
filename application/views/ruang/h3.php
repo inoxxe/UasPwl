@@ -14,6 +14,9 @@
 <div class="container">
     <h1>Peminjaman Kelas</h1>
             <h1>Selamat Datang <b><?php echo $this->session->userdata('nama'); ?></b></h1>
+            <h1>Selamat Datang <b><?php echo $this->session->userdata('kelas'); ?></b></h1>
+            <h1>Selamat Datang <b><?php echo $this->session->userdata('hari'); ?></b></h1>
+            <h1>Selamat Datang <b><?php echo $this->session->userdata('jam'); ?></b></h1>
 </div>
 
   
