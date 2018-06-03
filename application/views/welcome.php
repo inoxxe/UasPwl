@@ -1,97 +1,136 @@
 <!DOCTYPE html>
-<!--
-Template Name: Miresa
-Author: <a href="http://www.os-templates.com/">OS Templates</a>
-Author URI: http://www.os-templates.com/
-Licence: Free to use under our free template licence terms
-Licence URI: http://www.os-templates.com/template-terms
--->
-<html lang="">
-<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<html lang="en">
 <head>
-<title>SI-DIN | Mahasiswa</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-<link rel="stylesheet" href="<?php echo base_url('asset/styles/layout.css'); ?>">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIDIN | MAHASISWA</title>
+
+    <link rel="stylesheet" href="<?php echo base_url('asset/mahasiswa/dist/css/adminlte.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('asset/mahasiswa/plugins/font-awesome/css/font-awesome.min.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url ('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('asset/mahasiswa/plugins/iCheck/flat/blue.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('asset/mahasiswa/plugins/morris/morris.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('asset/mahasiswa/plugins/jvectormap/jquery-jvectormap-1.2.2.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url ('asset/mahasiswa/plugins/datepicker/datepicker3.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url ('asset/mahasiswa/plugins/daterangepicker/daterangepicker-bs3.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url ('asset/mahasiswa/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css');?>">
+    <link href="<?php echo base_url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet')?>">
+    <link rel="stylesheet" href="<?php echo base_url('asset/mahasiswa/asset/css/stylepenjual.css'); ?>">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 </head>
-<body id="top">
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- Top Background Image Wrapper -->
-<div class="bgded overlay light" style="background-image:url('<?php echo base_url('images/udinus.jpg')?>');"> 
-  <!-- ################################################################################################ -->
-  <div class="wrapper row0">
-    <div id="topbar" class="hoc clear"> 
-      <!-- ################################################################################################ -->
-      <ul class="nospace">
-        <li><a href="index.html"><i class="fa fa-lg fa-home"></i></a></li>
-        <li><a href="#" title="Call Us"><i class="fa fa-phone"></i></a></li>
-        <li><a href="#" title="Send a Mail"><i class="fa fa-envelope-o"></i></a></li>
-      </ul>
-      <!-- ################################################################################################ -->
-    </div>
-  </div>
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <div class="wrapper row1">
-    <header id="header" class="hoc clear"> 
-      <!-- ################################################################################################ -->
-      <div id="logo" class="fl_left">
-        <h1><a href="">SI-DIN</a></h1>
+<body class="hold-transition sidebar-mini">
+
+<div class="wrapper">
+<nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+	<ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="<?php echo base_url('penjual/index'); ?>" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+    <!--form-->
+    <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
       </div>
-      <nav id="mainav" class="fl_right">
-        <ul class="clear">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="<?php echo(base_url('index.php/helloword/logout'));?>">LOGOUT</a></li>
-        </ul>
-      </nav>
-      <!-- ################################################################################################ -->
-    </header>
+    </form>
+      <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Messages Dropdown Menu -->
+      <li>
+        <a href="<?php echo base_url('index.php/helloword/logout'); ?>" class="btn btn-primary btn-block btn-flat" >LogOut <i class="fa fa-sign-out nav-icon"></i> </a>
+      </li>
+    </ul>
+</nav>
+<!--side navbar-->
+<?php require_once(APPPATH. 'views/sidebar.php');?> ?>
+
+<!-- CONTENT -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Dashboard</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Dashboard v2</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
   </div>
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <div id="pageintro" class="hoc clear"> 
-    <!-- ################################################################################################ -->
-    <article>
-      <p>Selamat Datang</p>
-      <h3 class="heading">Silahkan Pilih</h3>
-      <footer>
-        <ul class="nospace inline pushright">
-          <li><a class="btn" href="#">KRS</a></li>
-          <li><a class="btn inverse" href="<?php echo base_url('index.php/control_peminjaman/pinjam');?>">Peminjaman Kelas</a></li>
-        </ul>
-      </footer>
-    </article>
-    <!-- ################################################################################################ -->
-  </div>
-  <!-- ################################################################################################ -->
-</div>
-<!-- End Top Background Image Wrapper -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row5">
-  <div id="copyright" class="hoc clear"> 
-    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">SI-DIN</a></p>
-  </div>
+
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="callout callout-info">
+            <h5>Selamat Datang</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Small boxes (Stat box) -->
+       
+        <!-- /.row -->
+  </section>
 </div>
 
-<<<<<<< HEAD
-<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+</div><!--divakhir - WRAPPER -->
 
-<!-- JAVASCRIPTS -->
-<script src="<?php echo base_url('asset/scripts/jquery.min.js');?>"></script>
-<script src="<?php echo base_url('asset/scripts/jquery.backtotop.js');?>"></script>
-<script src="<?php echo base_url('asset/scripts/jquery.mobilemenu.js');?>"></script>
-=======
-    </div>
-    
-</form>
-</div>
->>>>>>> cdaeaa7244e6a049e051ffecc59b2d0ccac712a5
+
+
+<!-- SCRIPT -->
+<script src="<?php echo base_url('asset/mahasiswa/plugins/jquery/jquery.min.js');?>"></script>
+<script src="<?php echo base_url('asset/mahasiswa/https://code.jquery.com/ui/1.12.1/jquery-ui.min.js');?>"></script>
+<script src="<?php echo base_url('asset/mahasiswa/asset/js/bootstrap.min.js');?>"></script>
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="<?php echo base_url('asset/mahasiswa/plugins/bootstrap/js/bootstrap.bundle.min.js');?>"></script>
+<!-- Morris.js charts -->
+<script src="<?php echo base_url('asset/mahasiswa/https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js');?>"></script>
+<script src="<?php echo base_url('asset/mahasiswa/plugins/morris/morris.min.js');?>"></script>
+<!-- Sparkline -->
+<script src="<?php echo base_url('asset/mahasiswa/plugins/sparkline/jquery.sparkline.min.js');?>"></script>
+<!-- jvectormap -->
+<script src="<?php echo base_url('asset/mahasiswa/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js');?>"></script>
+<script src="<?php echo base_url('asset/mahasiswa/plugins/jvectormap/jquery-jvectormap-world-mill-en.js');?>"></script>
+<!-- jQuery Knob Chart -->
+<script src="<?php echo base_url('asset/mahasiswa/plugins/knob/jquery.knob.js');?>"></script>
+<!-- daterangepicker -->
+<script src="<?php echo base_url('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js');?>"></script>
+<script src="<?php echo base_url('asset/mahasiswa/plugins/daterangepicker/daterangepicker.js');?>"></script>
+<!-- datepicker -->
+<script src="<?php echo base_url('asset/mahasiswa/plugins/datepicker/bootstrap-datepicker.js');?>"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="<?php echo base_url('asset/mahasiswa/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js');?>"></script>
+<!-- Slimscroll -->
+<script src="<?php echo base_url('asset/mahasiswa/plugins/slimScroll/jquery.slimscroll.min.js');?>"></script>
+<!-- FastClick -->
+<script src="<?php echo base_url('asset/mahasiswa/plugins/fastclick/fastclick.js');?>"></script>
+<!-- AdminLTE App -->
+<script src="<?php echo base_url('asset/mahasiswa/dist/js/adminlte.js');?>"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="<?php echo base_url('asset/mahasiswa/dist/js/pages/dashboard.js');?>"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="<?php echo base_url('asset/mahasiswa/dist/js/demo.js');?>"></script>
+
 </body>
 </html>

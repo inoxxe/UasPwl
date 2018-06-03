@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+  <title>E-class</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Peminjaman Kelas</h1>
+            <h1>Selamat Datang <b><?php echo $this->session->userdata('nama'); ?></b></h1>
+</div>
+
+  
+<table>
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="card" style="width: 18rem;">
+  <i class="fa fa-building" style="font-size:36px"></i>
+  <div class="card-body">
+    <p>H6.1</p>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="card" style="width: 18rem;">
+  <i class="fa fa-building" style="font-size:36px"></i>
+  <div class="card-body">
+    <p>H6.2</p>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="card" style="width: 18rem;">
+  <i class="fa fa-building" style="font-size:36px"></i>
+  <div class="card-body">
+    <p>H6.3</p>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="card" style="width: 18rem;">
+  <i class="fa fa-building" style="font-size:36px"></i>
+  <div class="card-body">
+    <p>H6.4</p>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="card" style="width: 18rem;">
+  <i class="fa fa-building" style="font-size:36px"></i>
+  <div class="card-body">
+    <p>H6.5</p>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="card" style="width: 18rem;">
+  <i class="fa fa-building" style="font-size:36px"></i>
+  <div class="card-body">
+    <p>H6.6</p>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="card" style="width: 18rem;">
+  <i class="fa fa-building" style="font-size:36px"></i>
+  <div class="card-body">
+    <p>H6.7</p>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="card" style="width: 18rem;">
+  <i class="fa fa-building" style="font-size:36px"></i>
+  <div class="card-body">
+    <p>H6.8</p>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="card" style="width: 18rem;">
+  <i class="fa fa-building" style="font-size:36px"></i>
+  <div class="card-body">
+    <p>H6.9</p>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="card" style="width: 18rem;">
+  <i class="fa fa-building" style="font-size:36px"></i>
+  <div class="card-body">
+    <p>H6.10</p>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="card" style="width: 18rem;">
+  <i class="fa fa-building" style="font-size:36px"></i>
+  <div class="card-body">
+    <p>H6.11</p>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="card" style="width: 18rem;">
+  <i class="fa fa-building" style="font-size:36px"></i>
+  <div class="card-body">
+    <p>H6.12</p>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="card" style="width: 18rem;">
+  <i class="fa fa-building" style="font-size:36px"></i>
+  <div class="card-body">
+    <p>H6.13</p>
+  </div>
+</div>
+</table>
+
+</body>
+</html>

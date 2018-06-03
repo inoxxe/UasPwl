@@ -26,7 +26,7 @@ class Control_peminjaman extends CI_Controller {
 				$where = $this->session->userdata('nim');
 				$data = $this->model_peminjaman->GetWhere('kelas',$where);
 				$data = array('data' => $data );	
-				$this->load->view('pinjam_kelas',$data);
+				$this->load->view('pilihruang',$data);
 					
 				}
 				else{
@@ -134,7 +134,7 @@ class Control_peminjaman extends CI_Controller {
 		function proses_kelas(){
 		$this->load->model('model_peminjaman');
     	$data = array(
-        'nim' => $this->input->post('nim'),
+        'nim' => $this->session->userdata('username'),
         'hari' => $this->input->post('hari'),
         'jam' => $this->input->post('jam'),
         'keperluan' => $this->input->post('keperluan')
@@ -155,8 +155,10 @@ class Control_peminjaman extends CI_Controller {
 	    $this->load->model('model_peminjaman');
 	    $res = $this->model_peminjaman->Update('kelas', $data, $where);
 	    if ($res>0) {
+	    	
 	        redirect(base_url('index.php/control_peminjaman/pinjam'));
 	    }
+	  
 	}
 
 	
