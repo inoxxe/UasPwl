@@ -41,10 +41,23 @@ class Control_peminjaman extends CI_Controller {
 			
 			if($this->session->userdata('akses'))
 			{
-			
+				$this->load->model('model_operator');
+				$username=$this->session->userdata('username');
+				$where=array(
+					'nim'=>$username				
+				);
+				$cek=$this->model_operator->login('kelas',$where);
+				if( $cek->num_rows() > 0 )
+				{
+					$data = $cek->row_array();	
+					
+					$this->session->set_userdata('kelas', $data['kelas']);
+					$this->session->set_userdata('hari', $data['hari']);
+					$this->session->set_userdata('jam', $data['jam']);
 					$this->load->view('gedung');
 					
 				}
+			}
 				else{
 					
 					$this->load->view('helloworld/index');
@@ -56,8 +69,10 @@ class Control_peminjaman extends CI_Controller {
 			
 			if($this->session->userdata('akses'))
 			{
-			
-					$this->load->view('ruang/h3');
+					$this->load->model('model_peminjaman');
+					$data = $this->model_peminjaman->GetMahasiswa('jadwal');
+					$data = array('data' => $data );	
+					$this->load->view('ruang/h3',$data);
 					
 				}
 				else{
@@ -134,7 +149,7 @@ class Control_peminjaman extends CI_Controller {
 		function proses_kelas(){
 		$this->load->model('model_peminjaman');
     	$data = array(
-        'nim' => $this->session->userdata('username'),
+        'nim' => $this->input->post('nim'),
         'hari' => $this->input->post('hari'),
         'jam' => $this->input->post('jam'),
         'keperluan' => $this->input->post('keperluan')
@@ -143,7 +158,7 @@ class Control_peminjaman extends CI_Controller {
     	redirect(base_url('index.php/control_peminjaman/gedung'));
 		}
 
-	public function pilih($ruang)
+	function pilih($ruang)
 	{
 	    $nim = $this->session->userdata('username');
 	    $data = array(
@@ -155,10 +170,8 @@ class Control_peminjaman extends CI_Controller {
 	    $this->load->model('model_peminjaman');
 	    $res = $this->model_peminjaman->Update('kelas', $data, $where);
 	    if ($res>0) {
-	    	
 	        redirect(base_url('index.php/control_peminjaman/pinjam'));
 	    }
-	  
 	}
 
 	

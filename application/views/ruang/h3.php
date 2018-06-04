@@ -93,6 +93,23 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+              <div>
+                <p><?php 
+                $ruangku = $this->session->userdata('kelas');
+                $hariku = $this->session->userdata('hari');
+                $jamku = $this->session->userdata('jam');
+                foreach ($data as $key) {
+                  $hari = $key['hari'];
+                  $jam = $key['jam'];
+                }
+
+                if($ruangku == $ruang And $hariku == $hari And $jamku == $jam){
+                    echo "Unavailable";
+                  }else{
+                    echo "Available";
+                  }
+
+                ?></p>
               <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
@@ -106,6 +123,7 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+              <div>
               <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
