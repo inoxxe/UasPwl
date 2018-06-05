@@ -26,6 +26,7 @@ class Admin extends CI_Controller {
 		$this->load->model('Modeladmin');
     	$data = array(
         'matkul' => $this->input->post('matakuliah'),
+        'kelas' => $this->input->post('kelas'),
         'jammulai' => $this->input->post('jamm'),
         'jamselesai' => $this->input->post('jams')
         );
@@ -41,6 +42,7 @@ class Admin extends CI_Controller {
 	    $data = array(
 	    'id' => $krs[0]['id'],
         'matkul' => $krs[0]['matkul'],
+        'kelas' => $krs[0]['kelas'],
         'jammulai' => $krs[0]['jammulai'],
         'jamselesai' => $krs[0]['jamselesai'],
         );
@@ -51,10 +53,12 @@ class Admin extends CI_Controller {
 	{
 		$id = $_POST['id'];
 	    $matakuliah = $_POST['matakuliah'];
+	    $kelas = $_POST['kelas'];
 	    $jamm = $_POST['jamm'];
 	    $jams = $_POST['jams'];
 	    $data = array(
 	        'matkul' => $matakuliah,
+	        'kelas' => $kelas,
 	        'jammulai' => $jamm,
 	        'jamselesai' => $jams,
 	     );

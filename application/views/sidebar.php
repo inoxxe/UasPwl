@@ -25,16 +25,34 @@
             </a>
           </li>
         
-          <li class="nav-item">
-            <a href="<?php echo base_url('penjual/pemesanan'); ?>" class="nav-link">
-              <i class="nav-icon fa fa-area-chart"></i>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-edit"></i>
               <p>
                 KRS
+                <i class="fa fa-angle-left right"></i>
               </p>
             </a>
+            <ul class="nav nav-treeview">
+              
+              <li class="nav-item">
+                <a href="<?php echo base_url().'index.php/control_krs/tambahkrs'; ?>" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Input KRS</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="<?php echo base_url().'index.php/control_krs/lihatkrs'; ?>" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Lihat KRS</p>
+                </a>
+              </li>
+            </ul>
           </li>
+
           <li class="nav-item">
-            <a href="<?php echo base_url('index.php/control_peminjaman/pinjam'); ?>" class="nav-link">
+            <a href="<?php echo base_url('index.php/danang/lihatkrs'); ?>" class="nav-link">
               <i class="nav-icon fa fa-calendar"></i>
               <p>
                 Peminjaman Kelas

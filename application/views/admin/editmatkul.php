@@ -182,7 +182,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="#" class="nav-link active">
+            <a href="<?php echo base_url('index.php/admin'); ?>" class="nav-link active">
               <i class="nav-icon fa fa-dashboard"></i>
               <p>
                 Dashboard
@@ -365,6 +365,11 @@
                   <div class="form-group">
                     <label>Mata Kuliah</label>
                     <input type="text" class="form-control" name="matakuliah" value="<?php echo $matkul; ?>">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label>Kelas</label>
+                    <input type="text" class="form-control" name="kelas" placeholder="Masukan Kelas">
                   </div>
                   
                   <div class="form-group">

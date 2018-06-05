@@ -178,7 +178,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="#" class="nav-link active">
+            <a href="<?php echo base_url('index.php/admin'); ?>" class="nav-link active">
               <i class="nav-icon fa fa-dashboard"></i>
               <p>
                 Dashboard
@@ -281,9 +281,15 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>150</h3>
+                <h3>
+                  <?php
+                  $mahasiswa = $this->db->get('register');
+                  $hasil = $mahasiswa->num_rows();
+                  echo $hasil;
+                  ?>
+                </h3>
 
-                <p>New Orders</p>
+                <p>Jumlah Mahasiswa</p>
               </div>
               <div class="icon">
                 <i class="ion ion-bag"></i>
@@ -296,9 +302,14 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>53<sup style="font-size: 20px">%</sup></h3>
+                <h3>
+                  <?php
+                  $matkul = $this->db->get('matakuliah');
+                  echo $matkul->num_rows();
+                  ?>
+                </h3>
 
-                <p>Bounce Rate</p>
+                <p>Mata Kuliah</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
