@@ -113,18 +113,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <div class="row team-data">
             <div class="col-md-3 w3_team">
               <div class="team-profile">
-                <div class="member-img" align="center">
-                  <img src="<?php echo base_url('images/tm1.jpg');?>" class="img-responsive" alt="">
-                </div>
-                <h4 align="center">Member 1</h4>
-        <h5>Dosen</h5>
-        <p>Dosen Pemrograman Web Lanjut.</p>
-                <div class="member-social" align="center">
-                 <a href=""><i class="fa fa-instagram" aria-hidden="true"></i>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-google"></i></a>
-                </div>
+                
             </div>
             </div>
               
@@ -137,13 +126,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-3 w3_team">
               <div class="team-profile">
                 <div class="member-img" align="center">
+                  <img src="<?php echo base_url('images/rufi.jpg');?>" class="img-responsive" alt="">
+                </div>
+                <h4 align="center">Muhammad Syaifur Rohman M.Cs</h4>
+				<h5>Dosen Panutanque</h5>
+				<p>Dosen Pemrograman Web Lanjut.</p>
+                <div class="member-social" align="center">
+				         <a href="https://www.instagram.com/syeii/?hl=id" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+                  <a href="https://www.facebook.com/syaifur" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com/syeii" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a href="https://plus.google.com/112604562305947366949" target="_blank"><i class="fa fa-google"></i></a>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-3 w3_team">
+              <div class="team-profile">
+                <div class="member-img" align="center">
                   <img src="<?php echo base_url('images/tm1.jpg');?>" class="img-responsive" alt="">
                 </div>
                 <h4 align="center">Member 1</h4>
-				<h5>Dosen</h5>
-				<p>Dosen Pemrograman Web Lanjut.</p>
+        <h5>Dosen</h5>
+        <p>Dosen Pemrograman Web Lanjut.</p>
                 <div class="member-social" align="center">
-				         <a href=""><i class="fa fa-instagram" aria-hidden="true"></i>
+                 <a href=""><i class="fa fa-instagram" aria-hidden="true"></i>
                   <a href=""><i class="fa fa-facebook"></i></a>
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-google"></i></a>
@@ -172,11 +177,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <p class="testimonial_para">Sangat membantu dalam menunjang kegiatan belajar mengajar.</p><br>
                     
                     <div class="col-sm-1">
-                        <img src="<?php echo base_url('images/t1.jpg');?>" class="img-responsive" style="width: 80px">
+                        <img src="<?php echo base_url('images/ino.jpg');?>" class="img-responsive" style="width: 80px">
                         </div>
                         <div class="col-sm-11">
-                        <h4>Jack Andreson</h4>
-                       <h6>Student</h6>
+                        <h4>Januario Tristano Santoso</h4>
+                       <h6>Mahasiswa '16</h6>
                         </p>
                     </div>
                     
@@ -188,11 +193,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <p class="testimonial_para">Sangat bagus. Kembangkan lagi</p><br>
                     <div class="row">
                     <div class="col-sm-1">
-                        <img src="<?php echo base_url('images/t2.jpg');?>" class="img-responsive" style="width: 80px">
+                        <img src="<?php echo base_url('images/bagas.jpg');?>" class="img-responsive" style="width: 80px">
                         </div>
                         <div class="col-sm-11">
-                        <h4>Kiara Andreson</h4>
-                        <h6>Student</h6>
+                        <h4>Bagaskara Teguh P.W.</h4>
+                        <h6>Mahasiswa '16</h6>
                         </p>
                     </div>
                     </div>
@@ -204,11 +209,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <p class="testimonial_para">Tidak perlu capek datang ke TU untuk memesan kelas. Sangat baik</p><br>
                     <div class="row">
                     <div class="col-sm-1">
-                        <img src="<?php echo base_url('images/t3.jpg');?>" class="img-responsive" style="width: 80px">
+                        <img src="<?php echo base_url('images/debby.jpg');?>" class="img-responsive" style="width: 80px">
                         </div>
                         <div class="col-sm-11">
-                        <h4>Amy</h4>
-                        <h6>Old Student</h6>
+                        <h4>Natalia Debby</h4>
+                        <h6>Mahasisa</h6>
                         </p>
                     </div>
                     </div>
@@ -223,8 +228,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <img src="<?php echo base_url('images/t4.jpg');?>" class="img-responsive" style="width: 80px">
                         </div>
                         <div class="col-sm-11">
-                        <h4>Laila</h4>
-                        <h6>Old Student</h6>
+                        <h4>Danang Anandya</h4>
+                        <h6>Putra Udinus '16</h6>
                         </p>
                     </div>
                     </div>
