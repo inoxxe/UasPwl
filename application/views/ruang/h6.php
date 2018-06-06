@@ -93,6 +93,21 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+              <p><?php 
+                $hariku = $this->session->userdata('hari');
+                $jamku = $this->session->userdata('jam');
+                $res = 0;
+                foreach ($data as $key) {
+                  if($ruang == $key['kelas'] AND $hariku == $key['hari'] AND $jamku == $key['jam'])
+                  $res++;
+                }
+                if($res>0){
+                    echo "<p style=color:red;>Unavailable</p>";
+                  }else{
+                    echo "<p style=color:green;>Available</p>";
+                  }
+
+                ?></p>
               <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
@@ -106,6 +121,21 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+              <p><?php 
+                $hariku = $this->session->userdata('hari');
+                $jamku = $this->session->userdata('jam');
+                $res = 0;
+                foreach ($data as $key) {
+                  if($ruang == $key['kelas'] AND $hariku == $key['hari'] AND $jamku == $key['jam'])
+                  $res++;
+                }
+                if($res>0){
+                    echo "<p style=color:red;>Unavailable</p>";
+                  }else{
+                    echo "<p style=color:green;>Available</p>";
+                  }
+
+                ?></p>
               <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
@@ -119,6 +149,21 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+              <p><?php 
+                $hariku = $this->session->userdata('hari');
+                $jamku = $this->session->userdata('jam');
+                $res = 0;
+                foreach ($data as $key) {
+                  if($ruang == $key['kelas'] AND $hariku == $key['hari'] AND $jamku == $key['jam'])
+                  $res++;
+                }
+                if($res>0){
+                    echo "<p style=color:red;>Unavailable</p>";
+                  }else{
+                    echo "<p style=color:green;>Available</p>";
+                  }
+
+                ?></p>
               <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
@@ -132,6 +177,21 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+              <p><?php 
+                $hariku = $this->session->userdata('hari');
+                $jamku = $this->session->userdata('jam');
+                $res = 0;
+                foreach ($data as $key) {
+                  if($ruang == $key['kelas'] AND $hariku == $key['hari'] AND $jamku == $key['jam'])
+                  $res++;
+                }
+                if($res>0){
+                    echo "<p style=color:red;>Unavailable</p>";
+                  }else{
+                    echo "<p style=color:green;>Available</p>";
+                  }
+
+                ?></p>
               <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
@@ -145,6 +205,21 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+              <p><?php 
+                $hariku = $this->session->userdata('hari');
+                $jamku = $this->session->userdata('jam');
+                $res = 0;
+                foreach ($data as $key) {
+                  if($ruang == $key['kelas'] AND $hariku == $key['hari'] AND $jamku == $key['jam'])
+                  $res++;
+                }
+                if($res>0){
+                    echo "<p style=color:red;>Unavailable</p>";
+                  }else{
+                    echo "<p style=color:green;>Available</p>";
+                  }
+
+                ?></p>
               <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
@@ -159,6 +234,21 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+              <p><?php 
+                $hariku = $this->session->userdata('hari');
+                $jamku = $this->session->userdata('jam');
+                $res = 0;
+                foreach ($data as $key) {
+                  if($ruang == $key['kelas'] AND $hariku == $key['hari'] AND $jamku == $key['jam'])
+                  $res++;
+                }
+                if($res>0){
+                    echo "<p style=color:red;>Unavailable</p>";
+                  }else{
+                    echo "<p style=color:green;>Available</p>";
+                  }
+
+                ?></p>
               <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
@@ -171,6 +261,21 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+              <p><?php 
+                $hariku = $this->session->userdata('hari');
+                $jamku = $this->session->userdata('jam');
+                $res = 0;
+                foreach ($data as $key) {
+                  if($ruang == $key['kelas'] AND $hariku == $key['hari'] AND $jamku == $key['jam'])
+                  $res++;
+                }
+                if($res>0){
+                    echo "<p style=color:red;>Unavailable</p>";
+                  }else{
+                    echo "<p style=color:green;>Available</p>";
+                  }
+
+                ?></p>
               <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
@@ -183,6 +288,21 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+              <p><?php 
+                $hariku = $this->session->userdata('hari');
+                $jamku = $this->session->userdata('jam');
+                $res = 0;
+                foreach ($data as $key) {
+                  if($ruang == $key['kelas'] AND $hariku == $key['hari'] AND $jamku == $key['jam'])
+                  $res++;
+                }
+                if($res>0){
+                    echo "<p style=color:red;>Unavailable</p>";
+                  }else{
+                    echo "<p style=color:green;>Available</p>";
+                  }
+
+                ?></p>
               <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
@@ -195,6 +315,21 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+              <p><?php 
+                $hariku = $this->session->userdata('hari');
+                $jamku = $this->session->userdata('jam');
+                $res = 0;
+                foreach ($data as $key) {
+                  if($ruang == $key['kelas'] AND $hariku == $key['hari'] AND $jamku == $key['jam'])
+                  $res++;
+                }
+                if($res>0){
+                    echo "<p style=color:red;>Unavailable</p>";
+                  }else{
+                    echo "<p style=color:green;>Available</p>";
+                  }
+
+                ?></p>
               <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
@@ -207,6 +342,21 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+              <p><?php 
+                $hariku = $this->session->userdata('hari');
+                $jamku = $this->session->userdata('jam');
+                $res = 0;
+                foreach ($data as $key) {
+                  if($ruang == $key['kelas'] AND $hariku == $key['hari'] AND $jamku == $key['jam'])
+                  $res++;
+                }
+                if($res>0){
+                    echo "<p style=color:red;>Unavailable</p>";
+                  }else{
+                    echo "<p style=color:green;>Available</p>";
+                  }
+
+                ?></p>
               <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
@@ -219,6 +369,21 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+              <p><?php 
+                $hariku = $this->session->userdata('hari');
+                $jamku = $this->session->userdata('jam');
+                $res = 0;
+                foreach ($data as $key) {
+                  if($ruang == $key['kelas'] AND $hariku == $key['hari'] AND $jamku == $key['jam'])
+                  $res++;
+                }
+                if($res>0){
+                    echo "<p style=color:red;>Unavailable</p>";
+                  }else{
+                    echo "<p style=color:green;>Available</p>";
+                  }
+
+                ?></p>
               <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
@@ -231,6 +396,21 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+              <p><?php 
+                $hariku = $this->session->userdata('hari');
+                $jamku = $this->session->userdata('jam');
+                $res = 0;
+                foreach ($data as $key) {
+                  if($ruang == $key['kelas'] AND $hariku == $key['hari'] AND $jamku == $key['jam'])
+                  $res++;
+                }
+                if($res>0){
+                    echo "<p style=color:red;>Unavailable</p>";
+                  }else{
+                    echo "<p style=color:green;>Available</p>";
+                  }
+
+                ?></p>
               <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
@@ -243,6 +423,21 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+              <p><?php 
+                $hariku = $this->session->userdata('hari');
+                $jamku = $this->session->userdata('jam');
+                $res = 0;
+                foreach ($data as $key) {
+                  if($ruang == $key['kelas'] AND $hariku == $key['hari'] AND $jamku == $key['jam'])
+                  $res++;
+                }
+                if($res>0){
+                    echo "<p style=color:red;>Unavailable</p>";
+                  }else{
+                    echo "<p style=color:green;>Available</p>";
+                  }
+
+                ?></p>
               <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>

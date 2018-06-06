@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gostand | Penjual</title>
+    <title>SIDIN | MAHASISWA</title>
 
 
     <link rel="stylesheet" href="<?php echo base_url('asset/mahasiswa/dist/css/adminlte.min.css'); ?>">
@@ -84,6 +84,7 @@
               <h3 class="card-title">Pilih Ruangan</h3>
             </div>
             <?php $status = $this->session->userdata('status'); ?>
+            <?php echo validation_errors(); ?>
             <form role="form" method="post" action="<?php echo base_url().'index.php/control_peminjaman/proses_kelas' ?>">
                <div class="form-group">
                   <label for="exampleInputEmail1">Pilih Hari</label>

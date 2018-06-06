@@ -52,7 +52,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="<?php echo base_url('index.php/control_peminjaman/kelas'); ?>" class="nav-link">
+            <a href="<?php echo base_url('index.php/control_peminjaman/pinjam'); ?>" class="nav-link">
               <i class="nav-icon fa fa-calendar"></i>
               <p>
                 Peminjaman Kelas

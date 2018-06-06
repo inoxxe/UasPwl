@@ -93,6 +93,21 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+              <p><?php 
+                $hariku = $this->session->userdata('hari');
+                $jamku = $this->session->userdata('jam');
+                $res = 0;
+                foreach ($data as $key) {
+                  if($ruang == $key['kelas'] AND $hariku == $key['hari'] AND $jamku == $key['jam'])
+                  $res++;
+                }
+                if($res>0){
+                    echo "<p style=color:red;>Unavailable</p>";
+                  }else{
+                    echo "<p style=color:green;>Available</p>";
+                  }
+
+                ?></p>
               <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
@@ -106,6 +121,21 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+              <p><?php 
+                $hariku = $this->session->userdata('hari');
+                $jamku = $this->session->userdata('jam');
+                $res = 0;
+                foreach ($data as $key) {
+                  if($ruang == $key['kelas'] AND $hariku == $key['hari'] AND $jamku == $key['jam'])
+                  $res++;
+                }
+                if($res>0){
+                    echo "<p style=color:red;>Unavailable</p>";
+                  }else{
+                    echo "<p style=color:green;>Available</p>";
+                  }
+
+                ?></p>
               <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
@@ -119,6 +149,21 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+              <p><?php 
+                $hariku = $this->session->userdata('hari');
+                $jamku = $this->session->userdata('jam');
+                $res = 0;
+                foreach ($data as $key) {
+                  if($ruang == $key['kelas'] AND $hariku == $key['hari'] AND $jamku == $key['jam'])
+                  $res++;
+                }
+                if($res>0){
+                    echo "<p style=color:red;>Unavailable</p>";
+                  }else{
+                    echo "<p style=color:green;>Available</p>";
+                  }
+
+                ?></p>
               <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
@@ -132,120 +177,26 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+              <p><?php 
+                $hariku = $this->session->userdata('hari');
+                $jamku = $this->session->userdata('jam');
+                $res = 0;
+                foreach ($data as $key) {
+                  if($ruang == $key['kelas'] AND $hariku == $key['hari'] AND $jamku == $key['jam'])
+                  $res++;
+                }
+                if($res>0){
+                    echo "<p style=color:red;>Unavailable</p>";
+                  }else{
+                    echo "<p style=color:green;>Available</p>";
+                  }
+
+                ?></p>
               <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3><?php $ruang = "h7.5";?> H 7.5</h3>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-
-
-           <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3><?php $ruang = "h7.6";?> H 7.6</h3>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-           <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3><?php $ruang = "h7.7";?> H 7.7</h3>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-           <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3><?php $ruang = "h7.8";?> H 7.8</h3>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-           <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3><?php $ruang = "h7.9";?> H 7.9</h3>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-           <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3><?php $ruang = "h7.10";?> H 7.10</h3>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-           <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3><?php $ruang = "h7.11";?> H 7.11</h3>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-           <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3><?php $ruang = "h7.12";?> H 7.12</h3>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-           <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3><?php $ruang = "h7.13";?> H 7.13</h3>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="<?php echo base_url('index.php/control_peminjaman/pilih/').$ruang;?>" class="small-box-footer">Pilih <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
+          
 
         </div>
            

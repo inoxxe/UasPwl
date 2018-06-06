@@ -19,6 +19,8 @@ class Control_peminjaman extends CI_Controller {
 			}
 	function pinjam()
 		{
+					$this->load->library('form_validation');
+
 			
 			if($this->session->userdata('akses'))
 			{
@@ -88,7 +90,10 @@ class Control_peminjaman extends CI_Controller {
 			if($this->session->userdata('akses'))
 			{
 			
-					$this->load->view('ruang/h4');
+					$this->load->model('model_peminjaman');
+					$data = $this->model_peminjaman->GetMahasiswa('jadwal');
+					$data = array('data' => $data );	
+					$this->load->view('ruang/h4',$data);
 					
 				}
 				else{
@@ -104,7 +109,10 @@ class Control_peminjaman extends CI_Controller {
 			if($this->session->userdata('akses'))
 			{
 			
-					$this->load->view('ruang/h5');
+					$this->load->model('model_peminjaman');
+					$data = $this->model_peminjaman->GetMahasiswa('jadwal');
+					$data = array('data' => $data );	
+					$this->load->view('ruang/h5',$data);
 					
 				}
 				else{
@@ -120,7 +128,10 @@ class Control_peminjaman extends CI_Controller {
 			if($this->session->userdata('akses'))
 			{
 			
-					$this->load->view('ruang/h6');
+					$this->load->model('model_peminjaman');
+					$data = $this->model_peminjaman->GetMahasiswa('jadwal');
+					$data = array('data' => $data );	
+					$this->load->view('ruang/h6',$data);
 					
 				}
 				else{
@@ -136,7 +147,10 @@ class Control_peminjaman extends CI_Controller {
 			if($this->session->userdata('akses'))
 			{
 			
-					$this->load->view('ruang/h7');
+					$this->load->model('model_peminjaman');
+					$data = $this->model_peminjaman->GetMahasiswa('jadwal');
+					$data = array('data' => $data );	
+					$this->load->view('ruang/h7',$data);
 					
 				}
 				else{
@@ -147,6 +161,7 @@ class Control_peminjaman extends CI_Controller {
 			}
 
 		function proses_kelas(){
+		$this->load->library('form_validation');
 		$this->load->model('model_peminjaman');
     	$data = array(
         'nim' => $this->input->post('nim'),
@@ -155,7 +170,12 @@ class Control_peminjaman extends CI_Controller {
         'keperluan' => $this->input->post('keperluan')
         );
     	$data = $this->model_peminjaman->Insert('kelas', $data);
-    	redirect(base_url('index.php/control_peminjaman/gedung'));
+    	if($this->form_validation->run() == FALSE){
+    		redirect(base_url('index.php/control_peminjaman/pinjam'));
+    	}else{
+    		redirect(base_url('index.php/control_peminjaman/gedung'));	
+    	}
+    	
 		}
 
 	function pilih($ruang)
