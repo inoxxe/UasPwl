@@ -103,22 +103,22 @@
                   <table class="table">
                     <thead class="thead-dark">
                       <tr>
+                        <th scope="col">Nama Mahasiswa </th>
                         <th scope="col">Mata Kuliah</th>
                         <th scope="col">Kelas</th>
                         <th scope="col">Jam Mulai </th>
                         <th scope="col">Jam Selesai </th>
-                        <th scope="col">Nama Mahasiswa </th>
                         <th scope="col">Aksi </th>
                       </tr>
                     </thead>
                     <tbody>
                     <?php foreach($data as $mahasiswa){ ?>
                     <tr>
+                      <td> <?php echo $mahasiswa['nama_mahasiswa']; ?> </td>
                         <th> <?php echo $mahasiswa['matkul']; ?> </th>
                         <td> <?php echo $mahasiswa['kelas']; ?> </td>
                         <td> <?php echo $mahasiswa['jammulai']; ?> </td>
                         <td> <?php echo $mahasiswa['jamselesai']; ?> </td>
-                        <td> <?php echo $mahasiswa['nama_mahasiswa']; ?> </td>
                         <td> 
                           <a href="<?php echo base_url().'index.php/control_krs/delete_krs/'.$mahasiswa['id']; ?>">
                             Delete

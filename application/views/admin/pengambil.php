@@ -44,13 +44,15 @@
         <a href="#" class="nav-link">Contact</a>
       </li>
     </ul>
-      <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- Messages Dropdown Menu -->
       <li>
         <a href="<?php echo base_url('index.php/helloword/logout'); ?>" class="btn btn-primary btn-block btn-flat" >LogOut <i class="fa fa-sign-out nav-icon"></i> </a>
       </li>
     </ul>
+
+    <!-- Right navbar links -->
+
   </nav>
   <!-- /.navbar -->
 
@@ -102,14 +104,6 @@
                 </a>
               </li>
             </ul>
-             <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="<?php echo base_url().'index.php/admin/pengambil'; ?>" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Data Pengambil KRS</p>
-                </a>
-              </li>
-            </ul>
           </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
@@ -151,6 +145,7 @@
                   <p>Daftar Data Mahasiswa</p>
                 </a>
               </li>
+              
           
           
           
@@ -167,12 +162,10 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Dashboard</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="<?php echo base_url('index.php/admin'); ?>">Home</a></li>
-              
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -184,47 +177,59 @@
     <section class="content">
       <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
+               <div class="row">
+          <!-- Left col -->
+          <section class="col-lg-12 connectedSortable">
+            
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>
-                  <?php
-                  $mahasiswa = $this->db->get('register');
-                  $hasil = $mahasiswa->num_rows();
-                  echo $hasil;
-                  ?>
-                </h3>
 
-                <p>Jumlah Mahasiswa</p>
+
+          <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Data Pengambil Mata Kuliah</h3>
               </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
+              <!-- /.card-header -->
+
+                <div class="card-body">
+                  <table border="1" style="border-collapse: collapse;">
+                    <tr style="background: grey; text-align: left;"  >
+                          <th scope="col">No</th>
+                          <th scope="col">NIM</th>
+                          <th scope="col">Mata Kulaih</th>
+                          <th scope="col">Kelas</th>
+                          <th scope="col">Action</th>
+                    </tr>
+                <?php $no =1; foreach ($data as $krs) {?>
+                    <tr>
+                      <td><?php echo $no++; ?></td>
+                      <td><?php echo $krs['nama_mahasiswa']; ?></td>
+                      <td><?php echo $krs['matkul']; ?></td>
+                      <td><?php echo $krs['kelas']; ?></td>
+                      <td><a href="<?php echo base_url('index.php/admin/delete_pengambil/').$krs['nama_mahasiswa']; ?>">Delete</td>
+                  </tr>
+                  <?php } ?>
+              </table>
+                </div>
+
+                <div class="card-footer">
+                </div>
+                
+              </form>
+
             </div>
           </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3>
-                  <?php
-                  $matkul = $this->db->get('matakuliah');
-                  echo $matkul->num_rows();
-                  ?>
-                </h3>
-                <p>Mata Kuliah</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div>
-            </div>
-          </div>
+     <!-- /.card -->
+          </section>
+          <!-- /.Left col -->
+          <!-- right col (We are only adding the ID to make the widgets sortable)-->
+          <section class="col-lg-5 connectedSortable">
+
+          </section>
+          <!-- right col -->
         </div>
-        <!-- /.row -->
-        <!-- Main row -->
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
     </section>

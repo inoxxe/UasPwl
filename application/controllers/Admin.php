@@ -21,6 +21,14 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/matakuliah', $data);
 	}
 
+	public function pengambil()
+	{
+		$this->load->model('Modeladmin');
+		$data = $this->Modeladmin->GetMahasiswa('mahasiswa');
+		$data = array('data' => $data );
+		$this->load->view('admin/pengambil', $data);
+	}
+
 	public function prosestambahmatakuliah()
 	{
 		$this->load->model('Modeladmin');
@@ -80,6 +88,14 @@ class Admin extends CI_Controller {
 	    redirect('admin/matakuliah','refresh');
 	}
 
+
+	public function delete_pengambil($nim)
+	{
+		$id = array('id' => $nim);
+	    $this->load->model('modeladmin');
+	    $this->modeladmin->Delete('mahasiswa', $id);
+	    redirect('admin/pengambil','refresh');
+	}
 
 	/// Punya INO
 
