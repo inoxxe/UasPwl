@@ -170,11 +170,7 @@ class Control_peminjaman extends CI_Controller {
         'keperluan' => $this->input->post('keperluan')
         );
     	$data = $this->model_peminjaman->Insert('kelas', $data);
-    	if($this->form_validation->run() == FALSE){
-    		redirect(base_url('index.php/control_peminjaman/pinjam'));
-    	}else{
-    		redirect(base_url('index.php/control_peminjaman/gedung'));	
-    	}
+    		redirect(base_url('index.php/control_peminjaman/gedung'));
     	
 		}
 
