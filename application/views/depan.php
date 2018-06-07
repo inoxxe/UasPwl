@@ -316,7 +316,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<i class="fa fa-fax" aria-hidden="true"></i>
 			<p>Fax : (024) 3569684</p>
 			<i class="fa fa-envelope" aria-hidden="true"></i>
-			<p><a href="mailto:info@example.com">sekretariat@dinus.ac.id</a></p>
+			<p><a href="mailto:sekretariat@dinus.ac.id">sekretariat@dinus.ac.id</a></p>
 
 </div>
 
