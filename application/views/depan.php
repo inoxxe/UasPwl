@@ -123,14 +123,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <h2 align="center">Our Staff</h2>
         <div class="container">
           <div class="row team-data">
-            <div class="col-md-3 w3_team">
+            <div class="col-md-2 w3_team">
               <div class="team-profile">
                 <div class="member-img" align="center">
                   <img src="<?php echo base_url('images/rufi.jpg');?>" class="img-responsive" alt="">
                 </div>
                 <h4 align="center">Muhammad Syaifur Rohman M.Cs</h4>
 				<h5>Dosen Panutanque</h5>
-				<p>Dosen Pemrograman Web Lanjut.</p>
+				<p>Teman Yang Menjabat Dosen.</p>
                 <div class="member-social" align="center">
 				         <a href="https://www.instagram.com/syeii/?hl=id" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
                   <a href="https://www.facebook.com/syaifur" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -139,14 +139,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             </div>
-            <div class="col-md-3 w3_team">
+            <div class="col-md-2 w3_team">
               <div class="team-profile">
                 <div class="member-img" align="center">
-                  <img src="<?php echo base_url('images/wahyu.jpg');?>" class="img-responsive" alt="">
+                  <img src="<?php echo base_url('images/ino1.jpg');?>" class="img-responsive" alt="">
                 </div>
-                <h4 align="center">Wahyu Rizky Eka Perwira</h4>
-        <h5>"TEMAN"</h5>
-        <p>Teman Yang Membantu Sedikit.</p>
+                <h4 align="center">Januario Tristano Santoso</h4>
+        <h5>Cukong</h5>
+        <p>Ketua Kelompok Penuh Gairah.</p>
                 <div class="member-social" align="center">
                  <a href="https://www.instagram.com/wahyuriz17/?hl=id" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
                   <a href="https://www.facebook.com/wahyurizky17" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -154,14 +154,46 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             </div>
-            <div class="col-md-3 w3_team">
+            <div class="col-md-2 w3_team">
               <div class="team-profile">
                 <div class="member-img" align="center">
-                  <img src="<?php echo base_url('images/abdiel.jpg');?>" class="img-responsive" alt="">
+                  <img src="<?php echo base_url('images/debby1.jpg');?>" class="img-responsive" alt="">
                 </div>
-                <h4 align="center">Abdiel Reyhan B.</h4>
-        <h5>"BAPAK"</h5>
-        <p>Bapak Yang Membantu Debby Ini Itu.</p>
+                <h4 align="center">Natalia Debby Permana</h4>
+        <h5>Perusak</h5>
+        <p>Paling Pinter Nyusahin Ketua.</p>
+                <div class="member-social" align="center">
+                 <a href="https://www.instagram.com/abdiellreyhan/?hl=id" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+                  <a href="https://www.facebook.com/abdielreyhan" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com/reyhan_abdiel?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a href="https://plus.google.com/106548468727290631368" target="_blank"><i class="fa fa-google"></i></a>
+                </div>
+            </div>
+            </div>
+             <div class="col-md-2 w3_team">
+              <div class="team-profile">
+                <div class="member-img" align="center">
+                  <img src="<?php echo base_url('images/bagas1.jpg');?>" class="img-responsive" alt="">
+                </div>
+                <h4 align="center">Bagaskara Teguh Prakosa W.</h4>
+        <h5>Driver</h5>
+        <p>Nyetir Paling Banter.</p>
+                <div class="member-social" align="center">
+                 <a href="https://www.instagram.com/abdiellreyhan/?hl=id" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+                  <a href="https://www.facebook.com/abdielreyhan" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com/reyhan_abdiel?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a href="https://plus.google.com/106548468727290631368" target="_blank"><i class="fa fa-google"></i></a>
+                </div>
+            </div>
+            </div>
+             <div class="col-md-2 w3_team">
+              <div class="team-profile">
+                <div class="member-img" align="center">
+                  <img src="<?php echo base_url('images/danang1.jpg');?>" class="img-responsive" alt="">
+                </div>
+                <h4 align="center">Danang Anandya</h4>
+        <h5>Last Man</h5>
+        <p>Membuat Paling Terakhir.</p>
                 <div class="member-social" align="center">
                  <a href="https://www.instagram.com/abdiellreyhan/?hl=id" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
                   <a href="https://www.facebook.com/abdielreyhan" target="_blank"><i class="fa fa-facebook"></i></a>
