@@ -108,6 +108,14 @@
                 </a>
               </li>
             </ul>
+             <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?php echo base_url().'index.php/admin/pengambil'; ?>" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Data Pengambil KRS</p>
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">

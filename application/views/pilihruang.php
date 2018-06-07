@@ -24,24 +24,22 @@
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
 <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
-	<ul class="navbar-nav">
+  <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="<?php echo base_url('penjual/index'); ?>" class="nav-link">Home</a>
+        <a href="<?php echo base_url('index.php/control_peminjaman/kelas'); ?>" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
       </li>
     </ul>
     <!--form-->
     <form class="form-inline ml-3">
       <div class="input-group input-group-sm">
-        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+        
         <div class="input-group-append">
-          <button class="btn btn-navbar" type="submit">
-            <i class="fa fa-search"></i>
+          
           </button>
         </div>
       </div>
@@ -63,12 +61,11 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0 text-dark">Dashboard</h1>
+          
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">Dashboard v2</li>
+            
           </ol>
         </div><!-- /.col -->
       </div><!-- /.row -->

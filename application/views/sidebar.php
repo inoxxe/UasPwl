@@ -1,6 +1,6 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="<?php echo base_url('penjual'); ?>" class="brand-link">
+    <a href="<?php echo base_url('index.php/control_peminjaman/kelas'); ?>" class="brand-link">
       <span class="brand-text font-weight-light">SI-DIN - <?php echo $this->session->userdata('username');?></span>
     </a>
     <!--side navbar bottom-->
@@ -10,7 +10,7 @@
         
         </div>
         <div class="info">
-          <a href="<?php echo base_url('penjual/profil'); ?>" class="d-block"><?php echo $this->session->userdata('nama');?></a>
+          <a href="<?php echo base_url('index.php/control_peminjaman/kelas'); ?>" class="d-block"><?php echo $this->session->userdata('nama');?></a>
         </div>
       </div>
        <!-- Sidebar Menu -->

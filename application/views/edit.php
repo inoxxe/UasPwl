@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>SI-DIN | ADMIN</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -42,7 +42,7 @@
         <a href="<?php echo base_url('index.php/admin'); ?>" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
+<a href="<?php echo base_url('index.php/admin/tampilpesan');?>" class="nav-link">Message</a>
       </li>
     </ul>
     <ul class="navbar-nav ml-auto">
@@ -101,6 +101,14 @@
                 <a href="<?php echo base_url().'index.php/admin/matakuliah'; ?>" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Input Mata Kuliah</p>
+                </a>
+              </li>
+            </ul>
+             <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?php echo base_url().'index.php/admin/pengambil'; ?>" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Data Pengambil KRS</p>
                 </a>
               </li>
             </ul>
@@ -181,12 +189,12 @@
 		<tr>
 			<td>NIM</td>
 			<td>:</td>
-			<td><input type="text" name="nim"></td>
+			<td><input type="text" name="nim" value="<?php echo $nim;?>"></td>
 		</tr>
 		<tr>
 			<td>Nama Mahasiswa</td>
 			<td>:</td>
-			<td><input type="text" name="nama"></td>
+			<td><input type="text" name="nama" value="<?php echo $nama;?>"></td>
 		</tr>
 		<tr>
 			<td>Jenis Kelamin</td>
@@ -201,7 +209,7 @@
 		<tr>
 			<td>Tgl Lahir</td>
 			<td>:</td>
-			<td><input type="text" name="lahir"></td>
+			<td><input type="text" name="lahir" value="<?php echo $lahir;?>"></td>
 		</tr>
 		<tr>
 			<td>Alamat</td>
@@ -224,7 +232,7 @@
 		<tr>
 			<td>Nama Orang Tua</td>
 			<td>:</td>
-			<td><input type="text" name="orangtua"></td>
+			<td><input type="text" name="orangtua" value="<?php echo $orangtua;?>"></td>
 		</tr>
 	
 		
