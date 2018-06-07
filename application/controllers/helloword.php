@@ -28,6 +28,17 @@ class Helloword extends CI_Controller{
 	$this->load->view('daftar_mahasiswa',$data);
 	}
 	
+	function prosespesan(){
+		$this->load->model('model_operator');
+		$data = array(
+        'nama' => $this->input->post('nama'),
+        'email' => $this->input->post('email'),
+        'isi' => $this->input->post('isi')
+        );
+        $data = $this->model_operator->Insert('pesan',$data);
+        redirect('helloword/index','refresh');        
+
+	}
 
 	public function login_adm()
 	{

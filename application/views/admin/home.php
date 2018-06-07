@@ -41,7 +41,7 @@
         <a href="<?php echo base_url('index.php/admin'); ?>" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
+        <a href="<?php echo base_url('index.php/admin/tampilpesan');?>" class="nav-link">Message</a>
       </li>
     </ul>
       <!-- Right navbar links -->
@@ -171,7 +171,6 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="<?php echo base_url('index.php/admin'); ?>">Home</a></li>
               
             </ol>
           </div><!-- /.col -->

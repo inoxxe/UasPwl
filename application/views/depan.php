@@ -257,9 +257,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="container">
 <h3>Contact Us</h3>
 <div class="w3_cr">
-<form action="#" method="post">
+<form action="<?php echo base_url('index.php/helloword/prosespesan'); ?>" method="post">
 <div class="w3_txt">
-<input type="text" name="name" placeholder=" Name" required="">
+<input type="text" name="nama" placeholder=" Name" required="">
 </div>
 <div class="agile_dwn">
 <div class="w3ls_lft">
@@ -268,7 +268,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="clearfix"></div>
 </div>
 <div class="wthree_tt">
-<textarea name="text" placeholder="Enter Message" required=""></textarea>
+<textarea name="isi" placeholder="Enter Message" required=""></textarea>
 </div>
  <input type="submit" value="Submit">
 </form>

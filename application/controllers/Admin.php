@@ -158,6 +158,20 @@ class Admin extends CI_Controller {
 	    }
 	}
 
+	function tampilpesan(){
+		$this->load->model('model_peminjaman');
+		$data = $this->model_peminjaman->GetMahasiswa('pesan');
+		$data = array('data' => $data );
+		$this->load->view('admin/message', $data);	
+	}
+
+	function delete_pesan($id){
+		$id = array('id' => $id);
+	    $this->load->model('modeladmin');
+	    $this->modeladmin->Delete('pesan', $id);
+	    redirect('admin/tampilpesan','refresh');	
+	}
+
 
 	//punya bagas
 	

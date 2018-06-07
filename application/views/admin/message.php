@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>SI-DIN | ADMIN</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -29,6 +29,7 @@
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
+
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
     <!-- Left navbar links -->
@@ -40,7 +41,7 @@
         <a href="<?php echo base_url('index.php/admin'); ?>" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-<a href="<?php echo base_url('index.php/admin/tampilpesan');?>" class="nav-link">Message</a>
+        <a href="<?php echo base_url('index.php/admin/tampilpesan');?>" class="nav-link">Message</a>
       </li>
     </ul>
     <ul class="navbar-nav ml-auto">
@@ -49,7 +50,9 @@
         <a href="<?php echo base_url('index.php/helloword/logout'); ?>" class="btn btn-primary btn-block btn-flat" >LogOut <i class="fa fa-sign-out nav-icon"></i> </a>
       </li>
     </ul>
-    </ul>
+
+    <!-- Right navbar links -->
+
   </nav>
   <!-- /.navbar -->
 
@@ -141,7 +144,11 @@
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Daftar Data Mahasiswa</p>
                 </a>
-              </li>   
+              </li>
+              
+          
+          
+          
       </nav>
       <!-- /.sidebar-menu -->
     </div>
@@ -164,84 +171,56 @@
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+               <div class="row">
+          <!-- Left col -->
+          <section class="col-lg-12 connectedSortable">
             
       <div class="container-fluid">
         <div class="row">
-          <!-- left column -->
-          <div class="col-md-6">
+
+
+          <div class="col-md-12">
             <!-- general form elements -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Input Mata Kuliah</h3>
+                <h3 class="card-title">Pesan</h3>
               </div>
               <!-- /.card-header -->
-              <!-- form start -->
-              <form method="POST" action="<?php echo base_url().'index.php/admin/prosestambahmatakuliah'; ?>"  role="form">
-                <div class="card-body">
-                  <div class="form-group">
-                    <label>Mata Kuliah</label>
-                    <input type="text" class="form-control" name="matakuliah" placeholder="Masukan Matakuliah">
-                  </div>
 
-                  <div class="form-group">
-                    <label>Kelas</label>
-                    <input type="text" class="form-control" name="kelas" placeholder="Masukan Kelas">
-                  </div>
-                  
-                  <div class="form-group">
-                    <label>Jam Masuk Mata Kuliah</label>
-                    <input type="time" class="form-control" name="jamm" placeholder="Masukan jam Mulai matakuliah">
-                  </div>
-
-                  <div class="form-group">
-                    <label>Jam Selesai Mata Kuliah</label>
-                    <input type="time" class="form-control" name="jams" placeholder="Masukan jam Selesai matakuliah">
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </form>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <!-- general form elements -->
-            <div class="card card-primary">
-              <div class="card-header">
-                <h3 class="card-title">Data Mata Kuliah</h3>
-              </div>
-              <!-- /.card-header -->
-              <!-- form start -->
-              <form method="POST" action="<?php echo base_url().'index.php/admin/prosestambahmatakuliah'; ?>"  role="form">
                 <div class="card-body">
                   <table border="1" style="border-collapse: collapse;">
-                    <tr style="background: grey">
-                        <td>Matakuliah</td>
-                        <td>kelas</td>
-                        <td>Jam Mulai Matakuliah</td>
-                        <td>Jam Selesai Matakuliah</td>
-                        <td>Aksi</td>
-                        <td colspan="2"></td>
+                    <tr style="background: grey; text-align: left;"  >
+                          <th scope="col">No</th>
+                          <th scope="col">Nama</th>
+                          <th scope="col">Email</th>
+                          <th scope="col">Isi Pesan</th>
+                          <th scope="col">Action</th>
                     </tr>
-                <?php foreach ($data as $krs) {?>
+                <?php $no =1; foreach ($data as $pesan) {?>
                     <tr>
-                      <td><?php echo $krs['matkul']; ?></td>
-                      <td><?php echo $krs['kelas']; ?></td>
-                      <td><?php echo $krs['jammulai']; ?></td>
-                      <td><?php echo $krs['jamselesai']; ?></td>
-
-                        <td><a href="<?php echo base_url('index.php/admin/editmatkul/').$krs['id']; ?>">Edit</td>
-                        <td><a href="<?php echo base_url('index.php/admin/delete_matkul/').$krs['id']; ?>">Delete</td>
+                      <td><?php echo $no++; ?></td>
+                      <td><?php echo $pesan['nama']; ?></td>
+                      <td><?php echo $pesan['email']; ?></td>
+                      <td><?php echo $pesan['isi']; ?></td>
+                      <td><a href="<?php echo base_url('index.php/admin/delete_pesan/').$pesan['id']; ?>">Delete</td>
                   </tr>
                   <?php } ?>
               </table>
                 </div>
+
                 <div class="card-footer">
                 </div>
+                
               </form>
+
             </div>
           </div>
+     <!-- /.card -->
           </section>
           <!-- /.Left col -->
           <!-- right col (We are only adding the ID to make the widgets sortable)-->
