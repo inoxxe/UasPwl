@@ -103,6 +103,8 @@
                   <option value="10.20-12.00" >10.20-12.00</option>
                   <option value="12.30-14.10" >12.30-14.10</option>
                   <option value="12.30-15.00" >12.30-15.00</option>
+                  <option value="14.10-16.20" >14.10-16.20</option>
+
                   </select>
                 </div>
                       <input type="hidden" name="nim" value="<?php echo $this->session->userdata('username'); ?>  " ></br>
