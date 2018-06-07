@@ -97,7 +97,7 @@
                   <table class="table">
                     <thead class="thead-dark">
                       <tr>
-                        <th scope="col">Nama Mahasiswa </th>
+                        <th scope="col">NIM</th>
                         <th scope="col">Mata Kuliah</th>
                         <th scope="col">Kelas</th>
                         <th scope="col">Jam Mulai </th>
