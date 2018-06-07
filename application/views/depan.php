@@ -61,21 +61,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<ul class="slides">
 							<li>
 								<div class="wthree_banner_info_grid">
-									<h3>Our Vision</h3>
-									<p>The top priority university to be chosen in education and entrepreneurship.</p>
+									<h3>Visi</h3>
+									<p>Program terbaik yang bisa mendapat nilai A pada matakuliah PWL yang di kepalai oleh pak Rufi.</p>
 								</div>
 							</li>
 							<li>
 								<div class="wthree_banner_info_grid">
-									<h3>Our Mission</h3>
-									<p>Conducting high quality university.</p>
-                  <p>Growing and developing creativity and innovation of civitas academica that well contributes to society, government, and business sector.</p>
+									<h3>Misi</h3>
+									<p>Membuat program yang bisa dimanfaatkan siadin kedepannya.</p>
+                  <p>Membantu mahasiswa yang malas agar mereka bisa menjadi lebih malas lagi jika ingin meminjam kelas.</p>
 								</div>
 							</li>
 							<li>
 								<div class="wthree_banner_info_grid">
 									<h3>Motto</h3>
-									<p>For a Better Future.</p>
+									<p>Sing penting Niat, Tekad, Semangat, Ora ono skill rpp.</p>
 								</div>
 							</li>
 						</ul>
@@ -142,16 +142,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-3 w3_team">
               <div class="team-profile">
                 <div class="member-img" align="center">
-                  <img src="<?php echo base_url('images/tm1.jpg');?>" class="img-responsive" alt="">
+                  <img src="<?php echo base_url('images/wahyu.jpg');?>" class="img-responsive" alt="">
                 </div>
-                <h4 align="center">Member 1</h4>
-        <h5>Dosen</h5>
-        <p>Dosen Pemrograman Web Lanjut.</p>
+                <h4 align="center">Wahyu Rizky Eka Perwira</h4>
+        <h5>"TEMAN"</h5>
+        <p>Teman Yang Membantu Sedikit.</p>
                 <div class="member-social" align="center">
-                 <a href=""><i class="fa fa-instagram" aria-hidden="true"></i>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-google"></i></a>
+                 <a href="https://www.instagram.com/wahyuriz17/?hl=id" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+                  <a href="https://www.facebook.com/wahyurizky17" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a href="https://plus.google.com/+WahyuPerwirawrep17" target="_blank"><i class="fa fa-google"></i></a>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-3 w3_team">
+              <div class="team-profile">
+                <div class="member-img" align="center">
+                  <img src="<?php echo base_url('images/abdiel.jpg');?>" class="img-responsive" alt="">
+                </div>
+                <h4 align="center">Abdiel Reyhan B.</h4>
+        <h5>"BAPAK"</h5>
+        <p>Bapak Yang Membantu Debby Ini Itu.</p>
+                <div class="member-social" align="center">
+                 <a href="https://www.instagram.com/abdiellreyhan/?hl=id" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+                  <a href="https://www.facebook.com/abdielreyhan" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com/reyhan_abdiel?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a href="https://plus.google.com/106548468727290631368" target="_blank"><i class="fa fa-google"></i></a>
                 </div>
             </div>
             </div>
