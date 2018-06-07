@@ -69,7 +69,6 @@
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">Dashboard v2</li>
           </ol>
         </div><!-- /.col -->
       </div><!-- /.row -->
@@ -122,7 +121,7 @@
                     <input type="text" class="form-control" name="nama_mahasiswa" value="<?php echo $this->session->userdata('username'); ?>">
                   </div>
                   <div class="form-group">
-                    <input type="submit" name="submit" class="form-control btn btn-primary">
+                    <input type="submit" name="submit" class="form-control btn btn-primary" value="Submit" >
                   </div>
                 </form>
 

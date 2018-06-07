@@ -114,8 +114,8 @@
                     <tbody>
                     <?php foreach($data as $mahasiswa){ ?>
                     <tr>
-                      <td> <?php echo $mahasiswa['nama_mahasiswa']; ?> </td>
-                        <th> <?php echo $mahasiswa['matkul']; ?> </th>
+                        <td> <?php echo $mahasiswa['nama_mahasiswa']; ?> </td>
+                        <td> <?php echo $mahasiswa['matkul']; ?> </td>
                         <td> <?php echo $mahasiswa['kelas']; ?> </td>
                         <td> <?php echo $mahasiswa['jammulai']; ?> </td>
                         <td> <?php echo $mahasiswa['jamselesai']; ?> </td>
