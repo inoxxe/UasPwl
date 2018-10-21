@@ -17,26 +17,7 @@ class Control_peminjaman extends CI_Controller {
 				}
 				
 			}
-	function pinjam()
-		{
-					$this->load->library('form_validation');
-
-			
-			if($this->session->userdata('akses'))
-			{
-				$this->load->model('model_peminjaman');
-				$where = $this->session->userdata('nim');
-				$data = $this->model_peminjaman->GetWhere('kelas',$where);
-				$data = array('data' => $data );	
-				$this->load->view('pilihruang',$data);
-					
-				}
-				else{
-					
-					$this->load->view('helloworld/index');
-				}
-				
-			}
+	
 
 	function gedung()
 		{

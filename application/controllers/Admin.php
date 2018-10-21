@@ -99,64 +99,7 @@ class Admin extends CI_Controller {
 
 	/// Punya INO
 
-	public function delete_data($nim)
-	{
-		$status = "";
-	    $data = array(
-	        'status' => $status
-	     );
-	    $where = array(
-	        'nim' => $nim,
-	    );
-	    $this->load->model('model_peminjaman');
-	    $res = $this->model_peminjaman->Update('register', $data, $where);
-	    $nim = array('nim' => $nim);
-	    $this->load->model('model_peminjaman');
-	    $this->model_peminjaman->Delete('kelas', $nim);
-	    if ($res>0) {
-	        redirect('admin/daftar');
-	    }
-	}
-
-	public function daftar()
-	{
-		$this->load->model('model_peminjaman');
-		$data = $this->model_peminjaman->GetMahasiswa('kelas');
-		$data = array('data' => $data );
-		$this->load->view('admin/peminjaman', $data);
-	}
-
-	public function ya($nim)
-	{
-	    $status = "ya";
-	    $data = array(
-	        'status' => $status
-	     );
-	    $where = array(
-	        'nim' => $nim,
-	    );
-	    $this->load->model('model_peminjaman');
-	    $res = $this->model_peminjaman->Update('register', $data, $where);
-	    if ($res>0) {
-	        redirect('admin/daftar');
-	    }
-	}
-
-	public function tidak($nim)
-	{
-	    $status = "tidak";
-	    $data = array(
-	        'status' => $status
-	     );
-	    $where = array(
-	        'nim' => $nim,
-	    );
-	    $this->load->model('model_peminjaman');
-	    $res = $this->model_peminjaman->Update('register', $data, $where);
-	    if ($res>0) {
-	        redirect('admin/daftar');
-	    }
-	}
+	
 
 	function tampilpesan(){
 		$this->load->model('model_peminjaman');
